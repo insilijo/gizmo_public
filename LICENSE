@@ -1,0 +1,50 @@
+GIZMO — public repository for Paper 1 (substrate + GIZMO framework)
+
+This repository's contents fall under two licenses:
+
+1. SUBSTRATE + DERIVED ANALYTICAL OUTPUTS — CC-BY 4.0
+   --------------------------------------------------
+   - `substrate/graph.json` — the 38,148-node GIZMO biochemistry substrate.
+   - `figures/` — manuscript figures and source TSVs.
+   - `results/` — per-cohort manuscript-source tables.
+   - Per-cohort case-study bundles (deposited at Zenodo on acceptance).
+
+   Licensed under the Creative Commons Attribution 4.0 International
+   License (CC-BY 4.0). You may share and adapt these materials for any
+   purpose, including commercial, provided you give appropriate credit
+   by citing GIZMO Paper 1 + the substrate's four underlying sources
+   (Reactome, StringDB, HMDB, KEGG; see substrate/README.md).
+
+   Full license: https://creativecommons.org/licenses/by/4.0/
+
+2. CODE (`gizmo/`, `benchmarks/`) — Apache License 2.0
+   ---------------------------------------------------
+   Copyright 2026 Joseph J. Gardner (Insilijo).
+
+   Licensed under the Apache License, Version 2.0 (the "License"); you
+   may not use this file except in compliance with the License. You may
+   obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+   implied. See the License for the specific language governing
+   permissions and limitations under the License.
+
+3. UPSTREAM SUBSTRATE SOURCE LICENSES
+   ----------------------------------
+   The substrate is derived from four databases, each governed by its
+   own license. When using the substrate, you must comply with all four:
+
+   - Reactome — CC-BY 4.0; https://reactome.org/license
+   - StringDB — CC-BY 4.0; https://string-db.org/cgi/access?footer_active_subpage=licensing
+   - HMDB     — Academic redistribution permitted with attribution;
+                 see https://hmdb.ca/about for commercial inquiries
+   - KEGG     — Academic redistribution permitted; commercial use
+                 requires a license from Pathway Solutions Inc.
+
+   We have included from each source only the structured ontological
+   metadata (reactions, reactants, products, pathway memberships) needed
+   to compose the substrate, not the underlying full database content.

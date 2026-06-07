@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[codz]
+*.so
+*.egg-info/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local outputs (everything reproducible from sources + benchmarks/)
+zenodo_deposit/
+*.lock
+*.log
+
+# Don't track per-cohort raw data downloads — covered by source license
+# rather than redistribution
+data/cohorts/
