@@ -41,12 +41,18 @@ mg = read_json('substrate/graph.json')
 print(f'{mg.graph.number_of_nodes()} nodes, {mg.graph.number_of_edges()} edges')
 "
 
-# 3. (optional) Rebuild the Zenodo per-cohort case-study deposit
-#    Requires cohort F matrices + MOFA+ weights cached locally (these are
-#    in the Zenodo deposit when published; not redistributed here under
-#    each cohort's original source-data license).
+# 3. End-to-end pipeline on one cohort (requires raw cohort data on disk;
+#    loader will raise with the expected path if missing)
+python3 run_paper1.py Crohn
+
+# 4. Or replay β/α + basins from a Zenodo-deposited F matrix
+python3 run_paper1.py --from-F /path/to/zenodo/F.npz --out results/Crohn_replay
+
+# 5. (optional) Rebuild the Zenodo per-cohort case-study deposit
 python3 benchmarks/make_zenodo_bundle.py --dry-run
 ```
+
+Full install instructions: [`docs/INSTALL.md`](docs/INSTALL.md). Step-by-step walkthrough: [`docs/USAGE.md`](docs/USAGE.md).
 
 ---
 

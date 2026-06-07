@@ -4,6 +4,22 @@ This walkthrough takes one cohort (Crohn, n = 33, smallest in the panel) and rep
 
 Repeat for any other cohort by changing `--cohort Crohn` to the target cohort. Cohort names: `IDH_glioma`, `TCGA_IDH_glioma`, `TCGA_LUAD`, `KMPLOT_BRCA`, `CPTAC_CCRCC`, `CPTAC_COAD`, `CPTAC_OV`, `Su_COVID`, `Filbin_COVID`, `GSE65391_SLE`, `GSE65682_sepsis`, `Gao_RA`, `GSE89408_RA`, `Crohn`, `HMP2_IBD_CD`, `Erawijantari`, `NEPTUNE_kidney`, `Wang_RA`, `TB_DX`.
 
+## TL;DR — one command
+
+For cohorts whose raw data is on disk (loader doesn't raise), the whole substrate → F → β/α → signed basins flow is a single command:
+
+```bash
+python3 run_paper1.py Crohn
+```
+
+Outputs land in `results/Crohn/` (F.npz, beta_alpha.tsv, alpha_pc_loadings.npz, signed_basins.tsv, diagnostics.json, alpha_pc1_basin.png). To replay β/α from a Zenodo-deposited F matrix without rerunning the MAP solve:
+
+```bash
+python3 run_paper1.py --from-F /path/to/zenodo/F.npz --out results/Crohn_replay
+```
+
+The rest of this document walks through what each stage does and where its outputs live, in case you want to invoke them piecewise (for debugging, alternative cohorts, or method comparison).
+
 ## Step 0 — install
 
 Follow [INSTALL.md](INSTALL.md). Skip ahead if `python3 -c "from gizmo.export.json_export import read_json; mg = read_json('substrate/graph.json'); print(mg.graph.number_of_nodes())"` prints `38148`.
