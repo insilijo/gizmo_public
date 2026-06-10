@@ -86,16 +86,81 @@ def _load_cohort(name: str):
     return out
 
 
-def _build_modality_setups(prot, metab, samples, geometry):
-    """Map prot + metab dicts onto substrate node columns, z-score per modality.
+def _within_patient_zscore(data, log_transform=True):
+    """Within-patient log + z-score (the canonical Paper 1 v6 preprocessing).
 
-    Returns a list of ModalitySetup objects suitable for solve_map().
+    For each patient, take all positive feature values, optionally
+    log2(v+1)-transform, then z-score using THIS patient's own mean and std.
+    Replaces both cross-cohort feature normalization and modality-global-std
+    schemes — empirically more robust (Ablation 3, IDH-glioma + LUAD).
+    """
+    out = {}
+    for sid, gene_dict in data.items():
+        vals = np.array([v for v in gene_dict.values() if v > 0],
+                         dtype=np.float64)
+        if len(vals) < 10:
+            out[sid] = {}
+            continue
+        if log_transform:
+            xs = np.log2(vals + 1.0)
+        else:
+            xs = vals
+        mu, sd = xs.mean(), xs.std() + 1e-9
+        zd = {}
+        for g, v in gene_dict.items():
+            if v > 0:
+                if log_transform:
+                    zd[g] = float((np.log2(v + 1.0) - mu) / sd)
+                else:
+                    zd[g] = float((v - mu) / sd)
+        out[sid] = zd
+    return out
+
+
+def _per_feature_zscore(data, samples, feat_keys):
+    """Legacy per-feature z-score across samples (pre-v6 preprocessing).
+
+    Kept for --no-zscore-input runs and for downstream backwards compatibility.
+    """
+    vals_by_feat = {f: [] for f in feat_keys}
+    for s in samples:
+        if s not in data:
+            continue
+        for f in feat_keys:
+            if f in data[s]:
+                vals_by_feat[f].append(data[s][f])
+    stats = {}
+    for f, vs in vals_by_feat.items():
+        if vs:
+            arr = np.asarray(vs, dtype=float)
+            stats[f] = (arr.mean(), arr.std() + 1e-9)
+    out = {}
+    for s in samples:
+        if s not in data:
+            continue
+        d = {}
+        for f in feat_keys:
+            if f in data[s] and f in stats:
+                mu, sd = stats[f]
+                d[f] = float((data[s][f] - mu) / sd)
+        out[s] = d
+    return out
+
+
+def _build_modality_setups(prot, metab, samples, geometry, *,
+                            zscore_input=True, diffusion_t=2.0):
+    """Map prot + metab dicts onto substrate node columns and normalize.
+
+    Two preprocessing schemes:
+      - zscore_input=True  (canonical v6): within-patient log2+z-score
+      - zscore_input=False (legacy):       per-feature z-score across samples
+
+    diffusion_t=2.0 is the canonical heat-kernel pre-smoothing time
+    (Ablation 3 confirmed it as the cleanest single-variable improvement).
     """
     from gizmo.evidence.mappers import GeneMapper, MetaboliteMapper
     from gizmo.inference.projection import ModalitySetup
 
-    # NB: mappers consume the full MultiGraph, not the subgraph geometry —
-    # but feature_cols must reference geometry.nid_idx.
     setups = []
 
     if prot:
@@ -109,31 +174,14 @@ def _build_modality_setups(prot, metab, samples, geometry):
         log.info("Proteomics: %d features → %d substrate nodes",
                  len(prot_features), len(prot_node))
         if prot_node:
-            data_p = {}
-            vals_by_feat = {f: [] for f in prot_node}
-            for s in samples:
-                if s not in prot:
-                    continue
-                for f in prot_node:
-                    if f in prot[s]:
-                        vals_by_feat[f].append(prot[s][f])
-            stats = {}
-            for f, vs in vals_by_feat.items():
-                if vs:
-                    arr = np.asarray(vs, dtype=float)
-                    stats[f] = (arr.mean(), arr.std() + 1e-9)
-            for s in samples:
-                if s not in prot:
-                    continue
-                d = {}
-                for f in prot_node:
-                    if f in prot[s] and f in stats:
-                        mu, sd = stats[f]
-                        d[f] = float((prot[s][f] - mu) / sd)
-                data_p[s] = d
+            cohort_prot = {s: prot[s] for s in samples if s in prot}
+            if zscore_input:
+                data_p = _within_patient_zscore(cohort_prot, log_transform=True)
+            else:
+                data_p = _per_feature_zscore(cohort_prot, samples, prot_node)
             feat_cols_p = [(f, geometry.nid_idx[prot_node[f]]) for f in prot_node]
             setups.append(ModalitySetup(
-                label="proteomics", sigma=1.0, diffusion_t=0.0,
+                label="proteomics", sigma=1.0, diffusion_t=diffusion_t,
                 feature_cols=feat_cols_p, data=data_p))
 
     if metab:
@@ -147,31 +195,18 @@ def _build_modality_setups(prot, metab, samples, geometry):
         log.info("Metabolomics: %d features → %d substrate nodes",
                  len(metab_features), len(metab_node))
         if metab_node:
-            data_m = {}
-            vals_by_feat = {f: [] for f in metab_node}
-            for s in samples:
-                if s not in metab:
-                    continue
-                for f in metab_node:
-                    if f in metab[s]:
-                        vals_by_feat[f].append(metab[s][f])
-            stats = {}
-            for f, vs in vals_by_feat.items():
-                if vs:
-                    arr = np.asarray(vs, dtype=float)
-                    stats[f] = (arr.mean(), arr.std() + 1e-9)
-            for s in samples:
-                if s not in metab:
-                    continue
-                d = {}
-                for f in metab_node:
-                    if f in metab[s] and f in stats:
-                        mu, sd = stats[f]
-                        d[f] = float((metab[s][f] - mu) / sd)
-                data_m[s] = d
+            cohort_metab = {s: metab[s] for s in samples if s in metab}
+            if zscore_input:
+                # Metab values may already be log-transformed by loader;
+                # check by sign — if any negative, treat as already-log.
+                any_neg = any(v < 0 for s in cohort_metab.values() for v in s.values())
+                data_m = _within_patient_zscore(cohort_metab,
+                                                  log_transform=not any_neg)
+            else:
+                data_m = _per_feature_zscore(cohort_metab, samples, metab_node)
             feat_cols_m = [(f, geometry.nid_idx[metab_node[f]]) for f in metab_node]
             setups.append(ModalitySetup(
-                label="metabolomics", sigma=1.0, diffusion_t=0.0,
+                label="metabolomics", sigma=1.0, diffusion_t=diffusion_t,
                 feature_cols=feat_cols_m, data=data_m))
 
     if not setups:
@@ -345,8 +380,15 @@ def main():
                     help="Output directory (default: results/<cohort>)")
     ap.add_argument("--n-components", type=int, default=5,
                     help="Number of α-PCs to extract (default: 5)")
-    ap.add_argument("--hub-cap", type=int, default=200,
-                    help="Max degree per substrate node (default: 200)")
+    ap.add_argument("--hub-cap", type=int, default=500,
+                    help="Max degree per substrate node (default: 500, "
+                         "canonical Paper 1 v6 setting)")
+    ap.add_argument("--diffusion-t", type=float, default=2.0,
+                    help="Heat-kernel pre-smoothing time per modality "
+                         "(default: 2.0, canonical Paper 1 v6 setting)")
+    ap.add_argument("--no-zscore-input", action="store_true",
+                    help="Disable within-patient log+z-score preprocessing "
+                         "(use legacy per-feature normalization)")
     ap.add_argument("--skip-figure", action="store_true",
                     help="Don't render the α-PC1 basin figure")
     ap.add_argument("--from-F", default=None,
@@ -379,7 +421,12 @@ def main():
     else:
         prot, metab, ylabel, samples = _load_cohort(args.cohort)
         log.info("Cohort %s: n_samples=%d", args.cohort, len(samples))
-        modality_setups = _build_modality_setups(prot, metab, samples, geometry)
+        log.info("Preprocessing: zscore_input=%s, diffusion_t=%.2f, hub_cap=%d",
+                 not args.no_zscore_input, args.diffusion_t, args.hub_cap)
+        modality_setups = _build_modality_setups(
+            prot, metab, samples, geometry,
+            zscore_input=not args.no_zscore_input,
+            diffusion_t=args.diffusion_t)
         result = run_paper1_pipeline(
             geometry, modality_setups, samples,
             n_components=args.n_components)

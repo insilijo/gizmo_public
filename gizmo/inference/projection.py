@@ -33,6 +33,57 @@ log = logging.getLogger(__name__)
 _PROPAGATION_TYPES = frozenset({"reaction", "metabolite", "gene"})
 
 
+def _within_patient_zscore(
+    data: dict[str, dict[str, float]],
+    log_transform: bool = True,
+    min_features: int = 10,
+) -> dict[str, dict[str, float]]:
+    """Within-patient log + z-score preprocessing (Paper 1 v6 §5 diagnostic).
+
+    For each patient, take the patient's positive feature values, optionally
+    ``log2(v + 1)``-transform, then z-score using **this patient's own** mean
+    and std. Patients with fewer than ``min_features`` positive features are
+    excluded.
+
+    Used as a fine-grained subtype/anchor-recovery diagnostic preprocessing
+    (Manuscript v6 §5 + Methods §"Within-patient z-score") that surfaces
+    strong-driver signal absorbed by per-modality global-std normalization.
+    NOT a canonical replacement for cohort-level discrimination preprocessing.
+
+    Parameters
+    ----------
+    data : dict[patient_id, dict[feature_name, value]]
+        Per-patient sparse feature observations.
+    log_transform : bool, default True
+        If True, apply ``log2(v + 1)`` before z-scoring. Already-log
+        modalities (Olink NPX, microarray log-ratios) should pass False.
+    min_features : int, default 10
+        Minimum positive features per patient to compute z-score. Patients
+        below this floor get an empty dict.
+
+    Returns
+    -------
+    dict[patient_id, dict[feature_name, z_scored_value]]
+        Same shape as input; values replaced by per-patient z-scores.
+    """
+    out = {}
+    for sid, feat_dict in data.items():
+        vals = np.array([v for v in feat_dict.values() if v > 0],
+                         dtype=np.float64)
+        if len(vals) < min_features:
+            out[sid] = {}
+            continue
+        xs = np.log2(vals + 1.0) if log_transform else vals
+        mu, sd = xs.mean(), xs.std() + 1e-9
+        zd = {}
+        for f, v in feat_dict.items():
+            if v > 0:
+                x = np.log2(v + 1.0) if log_transform else v
+                zd[f] = float((x - mu) / sd)
+        out[sid] = zd
+    return out
+
+
 @dataclass
 class SubstrateGeometry:
     """Substrate Laplacian + log_PR direction needed for projection."""
@@ -185,7 +236,11 @@ def solve_map(
             M_i.shape, matvec=lambda v, w=M_inv: v * w, dtype=M_i.dtype
         )
         try:
-            f_sol, info = cg(M_i, rhs, M=Minv_op, rtol=cg_rtol, maxiter=cg_maxiter)
+            # scipy <1.12 uses tol=, ≥1.12 uses rtol=. Detect once per call.
+            try:
+                f_sol, info = cg(M_i, rhs, M=Minv_op, rtol=cg_rtol, maxiter=cg_maxiter)
+            except TypeError:
+                f_sol, info = cg(M_i, rhs, M=Minv_op, tol=cg_rtol, maxiter=cg_maxiter)
             if info > 0:
                 log.warning("MAP CG did not converge for patient %s (%d iters)", sid, info)
         except Exception as exc:
