@@ -1,0 +1,19 @@
+{
+  "cohort": "HMP2_IBD_CD",
+  "n_patients": 399,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.2974217712623122,
+    0.15112911204671714,
+    0.10613523316707713,
+    0.05895500496158346,
+    0.04680116055585846
+  ],
+  "mean_smoothness": 2639126784.0,
+  "compute_seconds": 1103.3341479301453,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_HMP2_IBD_CD_zscored.npz"
+}

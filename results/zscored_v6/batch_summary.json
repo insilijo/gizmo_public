@@ -1,0 +1,216 @@
+{
+  "cohorts_run": 11,
+  "cohorts_total": 12,
+  "total_compute_seconds": 10849.949781417847,
+  "per_cohort": [
+    {
+      "cohort": "Su_COVID",
+      "n_patients": 270,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.1431467883616797,
+        0.08142279722819107,
+        0.07736893318878833,
+        0.05212136769128243,
+        0.04482265769293386
+      ],
+      "mean_smoothness": 4976695296.0,
+      "compute_seconds": 1492.0308442115784,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Su_COVID_zscored.npz"
+    },
+    {
+      "cohort": "Gao_RA",
+      "n_patients": 52,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.9057069435575665,
+        0.0324060836062442,
+        0.017700093322290736,
+        0.005172897395564626,
+        0.004212581063872773
+      ],
+      "mean_smoothness": 75060846592.0,
+      "compute_seconds": 174.0600745677948,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Gao_RA_zscored.npz"
+    },
+    {
+      "cohort": "IDH_glioma",
+      "n_patients": 88,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.23858135817557977,
+        0.16405826764221296,
+        0.08190881285275464,
+        0.05450676600567408,
+        0.039753660307089225
+      ],
+      "mean_smoothness": 68534009856.0,
+      "compute_seconds": 937.9292142391205,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_IDH_glioma_zscored.npz"
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "n_patients": 458,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.05119049013756505,
+        0.03736409997471607,
+        0.029003527338640638,
+        0.026172578132869263,
+        0.021943302252919922
+      ],
+      "mean_smoothness": 55490686976.0,
+      "compute_seconds": 1503.138505935669,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_TCGA_IDH_glioma_zscored.npz"
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "n_patients": 383,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.1790892168012594,
+        0.12205255965887771,
+        0.10267358150024522,
+        0.06508274222009812,
+        0.051316368467950006
+      ],
+      "mean_smoothness": 10047501312.0,
+      "compute_seconds": 1100.849651813507,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Filbin_COVID_zscored.npz"
+    },
+    {
+      "cohort": "Erawijantari",
+      "n_patients": 96,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.3292101574924921,
+        0.2289268104612754,
+        0.20140333613137132,
+        0.09811436105891566,
+        0.056543289900810915
+      ],
+      "mean_smoothness": 171198736.0,
+      "compute_seconds": 290.43804597854614,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Erawijantari_zscored.npz"
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "n_patients": 645,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.050731850542879556,
+        0.0261417979689762,
+        0.021671972342053713,
+        0.018617898979946503,
+        0.015924923782361773
+      ],
+      "mean_smoothness": 34756272128.0,
+      "compute_seconds": 1787.1345348358154,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_KMPLOT_BRCA_zscored.npz"
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "n_patients": 508,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.08930082887697312,
+        0.04636694974939766,
+        0.03336942230798688,
+        0.03066066746934236,
+        0.021957360232468217
+      ],
+      "mean_smoothness": 107547222016.0,
+      "compute_seconds": 1529.854235649109,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_TCGA_LUAD_zscored.npz"
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "n_patients": 174,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.06591003564178265,
+        0.053068835191513786,
+        0.03815912989928825,
+        0.036322970001785984,
+        0.028276340727117103
+      ],
+      "mean_smoothness": 111685435392.0,
+      "compute_seconds": 522.8660342693329,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_GSE89408_RA_zscored.npz"
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "n_patients": 399,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.2974217712623122,
+        0.15112911204671714,
+        0.10613523316707713,
+        0.05895500496158346,
+        0.04680116055585846
+      ],
+      "mean_smoothness": 2639126784.0,
+      "compute_seconds": 1103.3341479301453,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_HMP2_IBD_CD_zscored.npz"
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "n_patients": 145,
+      "n_substrate_nodes": 38211,
+      "preprocessing": "within-patient log2+zscore",
+      "hub_cap": 500,
+      "diffusion_t": 2.0,
+      "sigma_per_modality": 1.0,
+      "alpha_pc_explained_variance_ratio": [
+        0.20329510766489936,
+        0.1146656673750583,
+        0.10043663806194482,
+        0.060076209502024386,
+        0.03722685176684866
+      ],
+      "mean_smoothness": 21736892416.0,
+      "compute_seconds": 406.6914691925049,
+      "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_CorEvitas_RA_zscored.npz"
+    }
+  ]
+}

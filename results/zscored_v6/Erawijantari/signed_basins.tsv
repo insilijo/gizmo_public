@@ -1,0 +1,66 @@
+pc	sign	rank	node_id	symbol	loading
+1	+	1	ENSG:ENSG00000174099	MSRB3	+0.407615
+1	+	2	symbol:MSRB1	MSRB1	+0.407615
+1	+	3	reactome:R-HSA-5676917	MRSBs reduce L-methyl-(R)-S-oxide to L-methionine	+0.300508
+1	+	4	symbol:MSRB2	MSRB2	+0.407615
+1	+	5	symbol:MSRB3	MSRB3	+0.407615
+1	-	1	reactome:R-ALL-9620115	GDN [mitochondrial matrix]	-0.033519
+1	-	2	reactome:R-ALL-9618878	GTN [mitochondrial matrix]	-0.033519
+1	-	3	symbol:ALDH2	ALDH2	-0.019084
+1	-	4	reactome:R-HSA-71723	acetaldehyde + NAD+ => acetate + NADH + H+ [mitochondrial]	-0.015218
+1	-	5	reactome:R-HSA-9620103	ALDH2 transforms GTN to NO	-0.030616
+1	-	6	reactome:R-ALL-380598	HIALD [mitochondrial matrix]	-0.130067
+1	-	7	reactome:R-HSA-380608	5-hydroxyindole acetaldehyde to 5-hydroxyindole acetic acid	-0.071430
+2	+	1	ENSG:ENSG00000174099	MSRB3	+0.058536
+2	+	2	symbol:MSRB1	MSRB1	+0.058536
+2	+	3	reactome:R-HSA-5676917	MRSBs reduce L-methyl-(R)-S-oxide to L-methionine	+0.043508
+2	+	4	symbol:MSRB2	MSRB2	+0.058536
+2	+	5	symbol:MSRB3	MSRB3	+0.058536
+2	-	1	symbol:AMD1	AMD1	-0.099207
+2	-	2	reactome:R-ALL-353113	dc-AdoMet [cytosol]	-0.066881
+2	-	3	reactome:R-HSA-351222	S-Adenosyl methionine <=> Decarboxylated-Adenosyl methionine + CO2	-0.089908
+3	+	1	reactome:R-HSA-2408544	AdoSeMet is converted to AdeSeHCys by MetTrans(1)	+0.119567
+3	+	2	ENSG:ENSG00000150540	HNMT	+0.070395
+3	+	3	reactome:R-ALL-5357652	AdoSeMet [cytosol]	+0.082577
+3	+	4	reactome:R-ALL-175991	MeHist [cytosol]	+0.081059
+3	+	5	symbol:GNMT	GNMT	+0.103629
+3	+	6	reactome:R-ALL-175979	MP+ [cytosol]	+0.447207
+3	+	7	reactome:R-ALL-5357653	AdeSeHCys [cytosol]	+0.080085
+3	+	8	symbol:NNMT	NNMT	+0.325661
+3	+	9	reactome:R-ALL-5359017	SARC [cytosol]	+0.077858
+3	+	10	reactome:R-HSA-175987	NNMT transfers CH3 from AdoMet to PY	+0.423225
+3	+	11	reactome:R-HSA-6798317	GNMT tetramer transfers methyl group from AdoMet to Gly to form AdoHyc and SARC	+0.076859
+3	+	12	reactome:R-ALL-175973	PY [cytosol]	+0.447207
+3	+	13	reactome:R-HSA-5359451	NNMT transfers CH3 from SAM to NAM to form MNA	+0.310763
+3	+	14	symbol:HNMT	HNMT	+0.105253
+3	+	15	reactome:R-HSA-175993	HNMT transfers CH3 group from AdoMet to Hist	+0.080173
+3	-	1	symbol:FMO3	FMO3	-0.109619
+3	-	2	reactome:R-ALL-30373	TMA [endoplasmic reticulum lumen]	-0.109619
+3	-	3	ENSG:ENSG00000007933	FMO3	-0.109619
+3	-	4	reactome:R-HSA-139970	FMO3:FAD N-oxidises TMA to TMAO	-0.088777
+4	+	1	reactome:R-ALL-9620115	GDN [mitochondrial matrix]	+0.158563
+4	+	2	reactome:R-ALL-9618878	GTN [mitochondrial matrix]	+0.158563
+4	+	3	symbol:ALDH2	ALDH2	+0.088909
+4	+	4	reactome:R-HSA-71723	acetaldehyde + NAD+ => acetate + NADH + H+ [mitochondrial]	+0.071159
+4	+	5	reactome:R-HSA-9620103	ALDH2 transforms GTN to NO	+0.143556
+4	+	6	reactome:R-ALL-380598	HIALD [mitochondrial matrix]	+0.613229
+4	+	7	reactome:R-HSA-380608	5-hydroxyindole acetaldehyde to 5-hydroxyindole acetic acid	+0.334704
+4	-	1	symbol:FMO3	FMO3	-0.128078
+4	-	2	reactome:R-ALL-30373	TMA [endoplasmic reticulum lumen]	-0.128078
+4	-	3	ENSG:ENSG00000007933	FMO3	-0.128078
+4	-	4	reactome:R-HSA-139970	FMO3:FAD N-oxidises TMA to TMAO	-0.104287
+5	+	1	symbol:AMD1	AMD1	+0.188349
+5	+	2	reactome:R-ALL-353113	dc-AdoMet [cytosol]	+0.126660
+5	+	3	reactome:R-HSA-351222	S-Adenosyl methionine <=> Decarboxylated-Adenosyl methionine + CO2	+0.170502
+5	-	1	reactome:R-HSA-1250264	TXNIP binds reduced thioredoxin	-0.012871
+5	-	2	ENSG:ENSG00000174099	MSRB3	-0.108934
+5	-	3	symbol:TXN	TXN	-0.016057
+5	-	4	symbol:MSRB1	MSRB1	-0.108934
+5	-	5	reactome:R-HSA-5676940	MSRA reduces L-methyl-(S)-S-oxide to L-Methionine	-0.019048
+5	-	6	symbol:MSRA	MSRA	-0.019451
+5	-	7	reactome:R-HSA-5676917	MRSBs reduce L-methyl-(R)-S-oxide to L-methionine	-0.081652
+5	-	8	reactome:R-HSA-3697882	PRDX5 reduces peroxynitrite to nitrite using TXN	-0.012154
+5	-	9	reactome:R-HSA-1250253	TXNIP is released from oxidized thioredoxin	-0.012871
+5	-	10	reactome:R-ALL-5676925	L-methionine (S)-S-oxide [cytosol]	-0.019451
+5	-	11	symbol:MSRB2	MSRB2	-0.108934
+5	-	12	symbol:MSRB3	MSRB3	-0.108934

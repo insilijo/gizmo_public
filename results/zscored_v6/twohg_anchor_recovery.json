@@ -1,0 +1,18 @@
+{
+  "cohort": "TCGA_IDH_glioma",
+  "n_active": 363,
+  "n_control": 95,
+  "n_metab_nodes": 6406,
+  "twohg": {
+    "(R)-2-hydroxyglutarate [mitochondrial matrix]": {
+      "rank": 26,
+      "cohens_d": 0.6295671463012695,
+      "pct": 0.4058694973462379
+    },
+    "(R)-2-hydroxyglutarate [cytosol]": {
+      "rank": 5779,
+      "cohens_d": -0.199124276638031,
+      "pct": 90.21230096784265
+    }
+  }
+}

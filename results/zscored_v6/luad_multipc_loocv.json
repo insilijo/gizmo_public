@@ -1,0 +1,25 @@
+{
+  "cohort": "TCGA_LUAD",
+  "n_kras_only": 61,
+  "n_egfr_only": 28,
+  "n_total": 89,
+  "multipc_lr_loocv_auc": 0.7025761124121779,
+  "multipc_lr_loocv_auc_raw": 0.7025761124121779,
+  "best_single_pc_auc": 0.705503512880562,
+  "per_pc_aucs": [
+    0.6018735362997658,
+    0.5989461358313817,
+    0.5714285714285714,
+    0.705503512880562,
+    0.5298594847775175,
+    0.5532786885245902,
+    0.5626463700234192,
+    0.5175644028103045,
+    0.5749414519906322,
+    0.5866510538641686
+  ],
+  "preprocessing": "within-patient log2+zscore + hub_cap=500 + diffusion_t=2.0",
+  "n_components": 10,
+  "classifier": "LogisticRegressionCV(cv=5, class_weight=balanced)",
+  "note": "0.835 reference was z-score + diffusion_t=0 on Rhea-full substrate"
+}

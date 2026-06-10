@@ -1,0 +1,19 @@
+{
+  "cohort": "Gao_RA",
+  "n_patients": 52,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.9057069435575665,
+    0.0324060836062442,
+    0.017700093322290736,
+    0.005172897395564626,
+    0.004212581063872773
+  ],
+  "mean_smoothness": 75060846592.0,
+  "compute_seconds": 174.0600745677948,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Gao_RA_zscored.npz"
+}

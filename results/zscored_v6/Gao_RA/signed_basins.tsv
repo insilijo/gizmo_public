@@ -1,0 +1,52 @@
+pc	sign	rank	node_id	symbol	loading
+1	+	1	reactome:R-ALL-6787748	CSA [cytosol]	+0.092667
+1	+	2	reactome:R-HSA-6787757	PXLP-K333-GADL1 decarboxylates acidic AAs	+0.091373
+1	+	3	symbol:GADL1	GADL1	+0.082146
+1	+	4	reactome:R-HSA-6814165	PXLP-K333-GADL1 decarboxylates CSA to HTAU	+0.087718
+1	-	1	symbol:IL4I1	IL4I1	-0.099755
+1	-	2	reactome:R-HSA-2160492	IL4I1:FAD oxidises L-Phe to kPPV	-0.064343
+1	-	3	symbol:PM20D1	PM20D1	-0.081050
+1	-	4	reactome:R-ALL-400431	OLEA [extracellular region]	-0.075963
+1	-	5	reactome:R-HSA-9673053	PM20D1 transforms oleoyl-phe from oleate and phe	-0.075235
+1	-	6	reactome:R-ALL-9673044	oleoyl-Phe [extracellular region]	-0.075963
+1	-	7	reactome:R-HSA-9673054	PM20D1 hydrolyzes oleoyl-phe	-0.075235
+1	-	8	reactome:R-ALL-351993	L-Phe [extracellular region]	-0.065611
+2	+	1	reactome:R-ALL-6787748	CSA [cytosol]	+0.149458
+2	+	2	reactome:R-HSA-6787757	PXLP-K333-GADL1 decarboxylates acidic AAs	+0.145983
+2	+	3	symbol:GADL1	GADL1	+0.147457
+2	+	4	reactome:R-HSA-6814165	PXLP-K333-GADL1 decarboxylates CSA to HTAU	+0.148021
+2	-	1	reactome:R-ALL-561052	ACV [cytosol]	-0.114105
+2	-	2	symbol:BPHL	BPHL	-0.114208
+2	-	3	reactome:R-HSA-6784959	BPHL hydrolyses VACV to ACV	-0.092019
+2	-	4	reactome:R-ALL-6784964	VACV [cytosol]	-0.114105
+3	+	1	reactome:R-HSA-8847912	PNPLA7 hydrolyzes LysoPtdCho	+0.091935
+3	+	2	reactome:R-HSA-6814766	GDPD1 hydrolyzes LysoPtdCho	+0.091710
+3	+	3	symbol:PNPLA7	PNPLA7	+0.143929
+3	+	4	reactome:R-HSA-6814778	GDPD3 hydrolyzes LysoPtdCho	+0.091666
+3	+	5	reactome:R-ALL-6814253	LysoPtdCho [endoplasmic reticulum membrane]	+0.088548
+3	+	6	symbol:GDPD3	GDPD3	+0.143929
+3	+	7	symbol:GDPD1	GDPD1	+0.143929
+3	-	1	ENSG:ENSG00000159650	UROC1	-0.117099
+3	-	2	symbol:UROC1	UROC1	-0.113521
+3	-	3	symbol:HAL	HAL	-0.115804
+3	-	4	reactome:R-ALL-30721	UCA [cytosol]	-0.108079
+3	-	5	reactome:R-ALL-34979	4I-5PROA [cytosol]	-0.090908
+3	-	6	reactome:R-HSA-70899	histidine => urocanate + NH4+	-0.090179
+3	-	7	reactome:R-HSA-70903	urocanate + H2O => 4-imidazolone-5-propanoate	-0.109614
+3	-	8	ENSG:ENSG00000084110	HAL	-0.112624
+4	+	1	symbol:QTRT2	QTRT2	+0.143511
+4	+	2	reactome:R-HSA-6782443	QTRT1:QTRTD1 exchanges guanine for queuine at guanosine-34 of tRNA(Asn),tRNA(Asp),tRNA(His),tRNA(Tyr) yielding queuosine-34 tRNA(Asn),tRNA(Asp),tRNA(His),tRNA(Tyr)	+0.132984
+4	+	3	reactome:R-HSA-9942295	QNG1 hydrolyzes queuosine 5'-monophosphate yielding queuine and ribose 5'-monophosphate	+0.139605
+4	+	4	symbol:QNG1	QNG1	+0.138546
+4	+	5	reactome:R-ALL-6782431	queuine [cytosol]	+0.139577
+4	+	6	reactome:R-ALL-9942293	queuosine 5'-phosphate [cytosol]	+0.138546
+4	-	1	ENSG:ENSG00000159650	UROC1	-0.035966
+4	-	2	reactome:R-ALL-30721	UCA [cytosol]	-0.035718
+4	-	3	symbol:UROC1	UROC1	-0.038963
+4	-	4	reactome:R-HSA-70903	urocanate + H2O => 4-imidazolone-5-propanoate	-0.036199
+5	+	1	symbol:FMO3	FMO3	+0.121225
+5	+	2	reactome:R-ALL-30373	TMA [endoplasmic reticulum lumen]	+0.121225
+5	+	3	reactome:R-ALL-140963	TMAO [endoplasmic reticulum lumen]	+0.121225
+5	+	4	reactome:R-HSA-139970	FMO3:FAD N-oxidises TMA to TMAO	+0.097726
+5	-	1	reactome:R-HSA-6803753	NAAA hydrolyses NAEs to FAs and ethanolamine	-0.059921
+5	-	2	reactome:R-ALL-6803745	ETA [lysosomal lumen]	-0.085550

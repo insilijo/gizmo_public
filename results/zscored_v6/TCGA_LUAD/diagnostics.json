@@ -1,0 +1,19 @@
+{
+  "cohort": "TCGA_LUAD",
+  "n_patients": 508,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.08930082887697312,
+    0.04636694974939766,
+    0.03336942230798688,
+    0.03066066746934236,
+    0.021957360232468217
+  ],
+  "mean_smoothness": 107547222016.0,
+  "compute_seconds": 1529.854235649109,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_TCGA_LUAD_zscored.npz"
+}

@@ -1,0 +1,167 @@
+Loading substrate data/processed/human_full/graph.json...
+  full graph: 79191 nodes, 298906 edges
+  subgraph (hub_cap=500): 38211 nodes
+
+SKIP Crohn: already exists at /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Crohn_zscored.npz
+
+[2/12] elapsed=0s
+
+================================================================================
+Cohort: Su_COVID
+================================================================================
+  Loaded n=270
+    prot: 337 features → 277 nodes
+    metab: 1036 features → 973 nodes
+  Solving MAP on 270 patients × 38211 nodes...
+  MAP done: F shape (270, 38211), 1472s
+  α-PC EVR: ['0.143', '0.081', '0.077', '0.052', '0.045']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Su_COVID_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/Su_COVID
+  Total compute: 1492s
+
+[3/12] elapsed=1492s
+
+================================================================================
+Cohort: Gao_RA
+================================================================================
+  Gao trans samples: Counter({'active': 14, 'control': 14}) (28)
+  Gao metab samples: Counter({'active': 14, 'control': 10}) (24)
+  Loaded n=52
+    prot: 22880 features → 11012 nodes
+    metab: 46 features → 37 nodes
+  Solving MAP on 52 patients × 38211 nodes...
+  MAP done: F shape (52, 38211), 168s
+  α-PC EVR: ['0.906', '0.032', '0.018', '0.005', '0.004']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Gao_RA_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/Gao_RA
+  Total compute: 174s
+
+[4/12] elapsed=1666s
+
+================================================================================
+Cohort: IDH_glioma
+================================================================================
+  Loaded n=88
+    prot: 14996 features → 9129 nodes
+    metab: 21 features → 17 nodes
+  Solving MAP on 88 patients × 38211 nodes...
+  MAP done: F shape (88, 38211), 477s
+  α-PC EVR: ['0.239', '0.164', '0.082', '0.055', '0.040']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_IDH_glioma_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/IDH_glioma
+  Total compute: 938s
+
+[5/12] elapsed=2604s
+
+================================================================================
+Cohort: TCGA_IDH_glioma
+================================================================================
+  Loaded n=458
+    prot: 20502 features → 11217 nodes
+  Solving MAP on 458 patients × 38211 nodes...
+  MAP done: F shape (458, 38211), 1480s
+  α-PC EVR: ['0.051', '0.037', '0.029', '0.026', '0.022']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_TCGA_IDH_glioma_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/TCGA_IDH_glioma
+  Total compute: 1503s
+
+[6/12] elapsed=4108s
+
+================================================================================
+Cohort: Filbin_COVID
+================================================================================
+  Loaded n=383
+    prot: 1420 features → 1153 nodes
+  Solving MAP on 383 patients × 38211 nodes...
+  MAP done: F shape (383, 38211), 1080s
+  α-PC EVR: ['0.179', '0.122', '0.103', '0.065', '0.051']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Filbin_COVID_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/Filbin_COVID
+  Total compute: 1101s
+
+[7/12] elapsed=5209s
+
+================================================================================
+Cohort: Erawijantari
+================================================================================
+  Loaded n=96
+    metab: 524 features → 44 nodes
+  Solving MAP on 96 patients × 38211 nodes...
+  MAP done: F shape (96, 38211), 255s
+  α-PC EVR: ['0.329', '0.229', '0.201', '0.098', '0.057']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Erawijantari_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/Erawijantari
+  Total compute: 290s
+
+[8/12] elapsed=5499s
+
+================================================================================
+Cohort: KMPLOT_BRCA
+================================================================================
+  Loaded n=645
+    prot: 13018 features → 8584 nodes
+  Solving MAP on 645 patients × 38211 nodes...
+  MAP done: F shape (645, 38211), 1768s
+  α-PC EVR: ['0.051', '0.026', '0.022', '0.019', '0.016']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_KMPLOT_BRCA_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/KMPLOT_BRCA
+  Total compute: 1787s
+
+[9/12] elapsed=7286s
+
+================================================================================
+Cohort: TCGA_LUAD
+================================================================================
+  Loaded n=508
+    prot: 20165 features → 11154 nodes
+  Solving MAP on 508 patients × 38211 nodes...
+  MAP done: F shape (508, 38211), 1501s
+  α-PC EVR: ['0.089', '0.046', '0.033', '0.031', '0.022']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_TCGA_LUAD_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/TCGA_LUAD
+  Total compute: 1530s
+
+[10/12] elapsed=8817s
+
+================================================================================
+Cohort: GSE89408_RA
+================================================================================
+  Loaded n=174
+    prot: 25049 features → 10770 nodes
+  Solving MAP on 174 patients × 38211 nodes...
+  MAP done: F shape (174, 38211), 513s
+  α-PC EVR: ['0.066', '0.053', '0.038', '0.036', '0.028']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_GSE89408_RA_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/GSE89408_RA
+  Total compute: 523s
+
+[11/12] elapsed=9340s
+
+================================================================================
+Cohort: HMP2_IBD_CD
+================================================================================
+  Loaded n=399
+    metab: 177 features → 133 nodes
+  Solving MAP on 399 patients × 38211 nodes...
+  MAP done: F shape (399, 38211), 1093s
+  α-PC EVR: ['0.297', '0.151', '0.106', '0.059', '0.047']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_HMP2_IBD_CD_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/HMP2_IBD_CD
+  Total compute: 1103s
+
+[12/12] elapsed=10443s
+
+================================================================================
+Cohort: CorEvitas_RA
+================================================================================
+  Loaded n=145
+    prot: 1220 features → 1132 nodes
+  Solving MAP on 145 patients × 38211 nodes...
+  MAP done: F shape (145, 38211), 404s
+  α-PC EVR: ['0.203', '0.115', '0.100', '0.060', '0.037']
+  Wrote F: /home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_CorEvitas_RA_zscored.npz
+  Wrote downstream artifacts: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/CorEvitas_RA
+  Total compute: 407s
+
+Wrote batch summary: /home/jgardner/GIZMO/benchmarks/results/unsupervised/zscored/batch_summary.json
+Total batch compute: 180.8 min

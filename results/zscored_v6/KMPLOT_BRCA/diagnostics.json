@@ -1,0 +1,19 @@
+{
+  "cohort": "KMPLOT_BRCA",
+  "n_patients": 645,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.050731850542879556,
+    0.0261417979689762,
+    0.021671972342053713,
+    0.018617898979946503,
+    0.015924923782361773
+  ],
+  "mean_smoothness": 34756272128.0,
+  "compute_seconds": 1787.1345348358154,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_KMPLOT_BRCA_zscored.npz"
+}

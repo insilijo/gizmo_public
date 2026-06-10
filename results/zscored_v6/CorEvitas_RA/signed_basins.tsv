@@ -1,0 +1,48 @@
+pc	sign	rank	node_id	symbol	loading
+1	+	1	symbol:FUOM	FUOM	+0.115978
+1	+	2	reactome:R-HSA-6787677	FUOM isomerises alpha-Fuc to beta-Fuc	+0.117600
+1	+	3	reactome:R-ALL-6787679	alpha-Fuc [cytosol]	+0.115978
+1	+	4	reactome:R-HSA-6787540	FCSK phosphorylates beta-Fuc to Fuc1P	+0.122859
+1	+	5	reactome:R-ALL-6787678	beta-Fuc [cytosol]	+0.121569
+1	+	6	reactome:R-ALL-6787542	Fuc1P [cytosol]	+0.110314
+1	+	7	symbol:FCSK	FCSK	+0.127161
+1	-	1	reactome:R-ALL-8855489	OSCN- [extracellular region]	-0.072521
+1	-	2	reactome:R-ALL-9626213	Peptidyl-Cys-SSCN [extracellular region]	-0.080400
+1	-	3	reactome:R-ALL-9626215	Peptidyl-Cys-SH [extracellular region]	-0.080400
+1	-	4	reactome:R-HSA-8941411	OSCN- reacts with Cys residues	-0.079041
+2	+	1	reactome:R-ALL-5693736	ETA [lipid droplet]	+0.122527
+2	+	2	reactome:R-HSA-5693751	FAAH2 hydrolyses AEA to AA and ETA	+0.099374
+2	+	3	reactome:R-ALL-5693733	AA [lipid droplet]	+0.122527
+2	+	4	reactome:R-ALL-5693752	AEA [lipid droplet]	+0.122527
+2	-	1	reactome:R-ALL-8855489	OSCN- [extracellular region]	-0.108190
+2	-	2	reactome:R-HSA-8855490	Lactoperoxidase (LPO) produces OSCN-	-0.081553
+2	-	3	reactome:R-ALL-8855492	SCN(-) [extracellular region]	-0.106985
+2	-	4	reactome:R-HSA-8941411	OSCN- reacts with Cys residues	-0.117977
+2	-	5	reactome:R-ALL-9626213	Peptidyl-Cys-SSCN [extracellular region]	-0.120092
+2	-	6	reactome:R-ALL-9626215	Peptidyl-Cys-SH [extracellular region]	-0.120092
+3	+	1	reactome:R-ALL-8855489	OSCN- [extracellular region]	+0.139107
+3	+	2	reactome:R-HSA-8855490	Lactoperoxidase (LPO) produces OSCN-	+0.105267
+3	+	3	reactome:R-ALL-8855492	SCN(-) [extracellular region]	+0.137467
+3	+	4	reactome:R-HSA-8941411	OSCN- reacts with Cys residues	+0.151624
+3	+	5	reactome:R-ALL-9626213	Peptidyl-Cys-SSCN [extracellular region]	+0.154148
+3	+	6	reactome:R-ALL-9626215	Peptidyl-Cys-SH [extracellular region]	+0.154148
+3	-	1	symbol:EPHX1	EPHX1	-0.121005
+3	-	2	reactome:R-ALL-5694091	BaP4,5-DHD [cytosol]	-0.121005
+3	-	3	reactome:R-ALL-5694080	BaP4,5O [cytosol]	-0.121005
+3	-	4	reactome:R-HSA-5694077	EPHX1 hydrates BaP4,5O to BaP4,5-DHD	-0.097733
+4	+	1	reactome:R-ALL-8855489	OSCN- [extracellular region]	+0.174559
+4	+	2	reactome:R-HSA-8855490	Lactoperoxidase (LPO) produces OSCN-	+0.131718
+4	+	3	reactome:R-ALL-8855492	SCN(-) [extracellular region]	+0.172595
+4	+	4	reactome:R-HSA-8941411	OSCN- reacts with Cys residues	+0.190317
+4	+	5	reactome:R-ALL-9626213	Peptidyl-Cys-SSCN [extracellular region]	+0.193681
+4	+	6	reactome:R-ALL-9626215	Peptidyl-Cys-SH [extracellular region]	+0.193681
+4	-	1	symbol:UROD	UROD	-0.082707
+4	-	2	reactome:R-ALL-189455	COPRO3 [cytosol]	-0.073651
+4	-	3	reactome:R-ALL-190128	COPRO1 [cytosol]	-0.089117
+4	-	4	reactome:R-HSA-190182	UROD decarboxylates URO1 to COPRO1	-0.079190
+4	-	5	reactome:R-ALL-190157	URO1 [cytosol]	-0.076533
+4	-	6	reactome:R-HSA-189425	UROD decarboxylates URO3 to COPRO3	-0.074170
+5	+	1	reactome:R-ALL-9659674	doxorubicin [cytosol]	+0.126590
+5	+	2	reactome:R-ALL-8937418	DOXOL [cytosol]	+0.126590
+5	+	3	reactome:R-HSA-8937419	CBR3 reduces DOX to DOXOL	+0.096952
+5	-	1	reactome:R-ALL-2564757	(2Fe-2S)(1+) [cytosol]	-0.107077

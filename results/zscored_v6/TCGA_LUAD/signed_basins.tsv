@@ -1,0 +1,37 @@
+pc	sign	rank	node_id	symbol	loading
+1	+	1	reactome:R-ALL-5696148	BZAM [extracellular region]	+0.108001
+1	+	2	reactome:R-HSA-5696183	AOC3 deaminates BZAM	+0.082608
+1	+	3	reactome:R-ALL-5696154	BZAL [extracellular region]	+0.108001
+1	-	1	reactome:R-ALL-6808468	HXAL [lipid droplet]	-0.068333
+1	-	2	reactome:R-ALL-2453691	PALM [lipid droplet]	-0.068333
+1	-	3	reactome:R-HSA-6808464	ALDH3B2 oxidises HXAL to PALM	-0.052302
+2	+	1	reactome:R-ALL-5696835	EST17b [mitochondrial matrix]	+0.101095
+2	+	2	reactome:R-HSA-5696822	AKR1B15 reduces EST17b to E1	+0.077317
+2	+	3	reactome:R-ALL-5696848	E1 [mitochondrial matrix]	+0.101095
+2	-	1	reactome:R-ALL-5164383	APO10al [mitochondrial matrix]	-0.059506
+2	-	2	reactome:R-ALL-5164389	betaC [mitochondrial matrix]	-0.059506
+2	-	3	reactome:R-HSA-5164399	BCO2:Fe2+ cleaves betaC to APO10al and bION	-0.048152
+2	-	4	reactome:R-ALL-5164390	bION [mitochondrial matrix]	-0.059506
+3	+	1	reactome:R-ALL-6786428	GlcNAc-beta1,4-GlcNAc [extracellular region]	+0.140172
+3	+	2	reactome:R-ALL-6786426	GlcNAc-beta1,4-GlcNAc-beta1,4-GlcNAc [extracellular region]	+0.140172
+3	+	3	reactome:R-HSA-6786421	CHIA hydrolyses chitin	+0.106839
+3	-	1	symbol:TREH	TREH	-0.080745
+3	-	2	reactome:R-ALL-189078	alpha,alpha-trehalose [extracellular region]	-0.080745
+3	-	3	reactome:R-HSA-188985	trehalose + H2O => 2 D-glucose	-0.066911
+4	+	1	reactome:R-ALL-9793568	Cipro HCl [extracellular region]	+0.138130
+4	+	2	reactome:R-HSA-9793628	Cipro is imported by organic cation transporters	+0.134636
+4	+	3	reactome:R-HSA-9793564	Cipro HCl dissolves	+0.134624
+4	+	4	reactome:R-ALL-9793566	Cipro(1+) [extracellular region]	+0.122652
+4	-	1	reactome:R-ALL-5693325	PPCA [peroxisomal matrix]	-0.066174
+4	-	2	reactome:R-ALL-5693311	P2C [peroxisomal matrix]	-0.105348
+4	-	3	reactome:R-HSA-5693347	CRYM reduces P2C to PPCA	-0.077722
+4	-	4	symbol:CRYM	CRYM	-0.105348
+5	+	1	reactome:R-HSA-9794270	SLCO1A2 transports Cipro(1+) into the cytosol	+0.093887
+5	+	2	reactome:R-HSA-9793564	Cipro HCl dissolves	+0.156500
+5	+	3	reactome:R-ALL-9793568	Cipro HCl [extracellular region]	+0.160406
+5	+	4	reactome:R-ALL-9793566	Cipro(1+) [extracellular region]	+0.142768
+5	+	5	reactome:R-HSA-9793628	Cipro is imported by organic cation transporters	+0.156374
+5	-	1	symbol:IZUMO2	IZUMO2	-0.086969
+5	-	2	symbol:IZUMO3	IZUMO3	-0.086969
+5	-	3	symbol:IZUMO4	IZUMO4	-0.086969
+5	-	4	reactome:R-HSA-1297275	CD9:Izumo Binding	-0.064927

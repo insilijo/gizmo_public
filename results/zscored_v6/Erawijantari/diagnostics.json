@@ -1,0 +1,19 @@
+{
+  "cohort": "Erawijantari",
+  "n_patients": 96,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.3292101574924921,
+    0.2289268104612754,
+    0.20140333613137132,
+    0.09811436105891566,
+    0.056543289900810915
+  ],
+  "mean_smoothness": 171198736.0,
+  "compute_seconds": 290.43804597854614,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_Erawijantari_zscored.npz"
+}

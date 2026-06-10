@@ -1,0 +1,49 @@
+pc	sign	rank	node_id	symbol	loading
+1	+	1	reactome:R-HSA-5694071	GLO1 dimer:2xZn2+ transforms MGXL and GSH to (R)-S-LGSH	+0.095753
+1	+	2	reactome:R-ALL-2564757	(2Fe-2S)(1+) [cytosol]	+0.143580
+1	+	3	reactome:R-HSA-6783221	HAGH hydrolyses (R)-S-LGSH to GSH and LACT	+0.111642
+1	+	4	reactome:R-ALL-5694130	(R)-S-LGSH [cytosol]	+0.122639
+1	+	5	reactome:R-ALL-5694074	MGXL [cytosol]	+0.126905
+1	+	6	reactome:R-ALL-5279872	D-LACT [cytosol]	+0.143580
+1	-	1	symbol:BPIFB6	BPIFB6	-0.055351
+1	-	2	symbol:BPIFA1	BPIFA1	-0.055351
+1	-	3	symbol:BPIFB4	BPIFB4	-0.055351
+1	-	4	reactome:R-HSA-6809521	BPIF binds bacteria	-0.046097
+1	-	5	symbol:BPIFA2	BPIFA2	-0.055351
+1	-	6	reactome:R-ALL-8879165	Microbial cell surface [plasma membrane]	-0.055351
+2	+	1	reactome:R-HSA-5694071	GLO1 dimer:2xZn2+ transforms MGXL and GSH to (R)-S-LGSH	+0.092489
+2	+	2	reactome:R-ALL-2564757	(2Fe-2S)(1+) [cytosol]	+0.200616
+2	+	3	reactome:R-HSA-6783221	HAGH hydrolyses (R)-S-LGSH to GSH and LACT	+0.151064
+2	+	4	reactome:R-ALL-5694130	(R)-S-LGSH [cytosol]	+0.141758
+2	+	5	reactome:R-ALL-5694074	MGXL [cytosol]	+0.109101
+2	+	6	reactome:R-ALL-5279872	D-LACT [cytosol]	+0.200616
+2	-	1	symbol:DAGLA	DAGLA	-0.113979
+2	-	2	reactome:R-HSA-426032	DAG is metabolized by DAGL to 2-AG	-0.111136
+2	-	3	symbol:DAGLB	DAGLB	-0.113979
+2	-	4	reactome:R-ALL-426030	2AG [plasma membrane]	-0.098106
+2	-	5	reactome:R-ALL-426026	Fatty Acid [plasma membrane]	-0.113979
+3	+	1	reactome:R-HSA-5694071	GLO1 dimer:2xZn2+ transforms MGXL and GSH to (R)-S-LGSH	+0.089579
+3	+	2	reactome:R-ALL-2564757	(2Fe-2S)(1+) [cytosol]	+0.142745
+3	+	3	reactome:R-HSA-6783221	HAGH hydrolyses (R)-S-LGSH to GSH and LACT	+0.111013
+3	+	4	reactome:R-ALL-5694130	(R)-S-LGSH [cytosol]	+0.117767
+3	+	5	reactome:R-ALL-5694074	MGXL [cytosol]	+0.115729
+3	+	6	reactome:R-ALL-5279872	D-LACT [cytosol]	+0.142745
+3	-	1	reactome:R-HSA-9638046	ACY3:Zn2+ dimer hydrolyses mercapturic acids	-0.103791
+3	-	2	symbol:ACY3	ACY3	-0.108885
+3	-	3	reactome:R-HSA-9861595	Cytosolic H2O2 decarboxylates PYR to acetate	-0.102559
+3	-	4	reactome:R-ALL-9717939	acetate [cytosol]	-0.089207
+4	+	1	reactome:R-HSA-1475028	Carbonic anhydrase dehydrates bicarbonate (mitochondria)	+0.085023
+4	+	2	symbol:CA5B	CA5B	+0.106635
+4	+	3	reactome:R-HSA-1475032	Carbonic anhydrase hydrates carbon dioxide (mitochondria)	+0.085023
+4	+	4	symbol:CA5A	CA5A	+0.106635
+4	-	1	reactome:R-HSA-8874470	TNFAIP8 proteins transfer PI(4,5)P2, PI(3,4,5)P3 from cytosolic vesicles to plasma membrane	-0.095869
+4	-	2	symbol:TNFAIP8L2	TNFAIP8L2	-0.118411
+4	-	3	symbol:TNFAIP8L3	TNFAIP8L3	-0.118411
+4	-	4	symbol:TNFAIP8L1	TNFAIP8L1	-0.118411
+5	+	1	reactome:R-HSA-8874470	TNFAIP8 proteins transfer PI(4,5)P2, PI(3,4,5)P3 from cytosolic vesicles to plasma membrane	+0.389147
+5	+	2	symbol:TNFAIP8L2	TNFAIP8L2	+0.481003
+5	+	3	symbol:TNFAIP8L3	TNFAIP8L3	+0.481003
+5	+	4	symbol:TNFAIP8L1	TNFAIP8L1	+0.481003
+5	-	1	symbol:PRM2	PRM2	-0.039888
+5	-	2	reactome:R-HSA-9821967	SRPK1 phosphorylates PRM2 in PRM2:dsDNA	-0.037069
+5	-	3	symbol:SRPK1	SRPK1	-0.028704

@@ -1,0 +1,19 @@
+{
+  "cohort": "IDH_glioma",
+  "n_patients": 88,
+  "n_substrate_nodes": 38211,
+  "preprocessing": "within-patient log2+zscore",
+  "hub_cap": 500,
+  "diffusion_t": 2.0,
+  "sigma_per_modality": 1.0,
+  "alpha_pc_explained_variance_ratio": [
+    0.23858135817557977,
+    0.16405826764221296,
+    0.08190881285275464,
+    0.05450676600567408,
+    0.039753660307089225
+  ],
+  "mean_smoothness": 68534009856.0,
+  "compute_seconds": 937.9292142391205,
+  "F_path": "/home/jgardner/GIZMO/benchmarks/results/unsupervised/stage3_F_IDH_glioma_zscored.npz"
+}
