@@ -1,0 +1,46 @@
+{
+  "cohort": "GSE94438",
+  "n_pairs": 69,
+  "timepoint_distribution": {
+    "6": 35,
+    "18": 34
+  },
+  "group_distribution": {
+    "case (TB)": 21,
+    "Control": 48
+  },
+  "pairwise": {
+    "\u0394Filbin-PC3__\u0394Filbin-PC5": {
+      "obs_rho": 0.6035805626598466,
+      "CI95": [
+        0.39500534979311663,
+        0.7719915831879547
+      ],
+      "gse89403_rho": 0.639,
+      "verdict": "\u2713 strong"
+    },
+    "\u0394Filbin-PC3__\u0394Wang-PC5": {
+      "obs_rho": 0.731494336865181,
+      "CI95": [
+        0.5629189596741017,
+        0.8407241678758801
+      ],
+      "gse89403_rho": 0.749,
+      "verdict": "\u2713 strong"
+    },
+    "\u0394Filbin-PC5__\u0394Wang-PC5": {
+      "obs_rho": 0.7668249908659116,
+      "CI95": [
+        0.6266316408255473,
+        0.8596632995566337
+      ],
+      "gse89403_rho": 0.537,
+      "verdict": "~ direction"
+    }
+  },
+  "gse89403_reference": {
+    "Filbin-PC3__Filbin-PC5": 0.639,
+    "Filbin-PC3__Wang-PC5": 0.749,
+    "Filbin-PC5__Wang-PC5": 0.537
+  }
+}

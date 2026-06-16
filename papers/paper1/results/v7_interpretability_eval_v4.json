@@ -1,0 +1,1950 @@
+{
+  "cells": [
+    {
+      "cohort": "Crohn",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.9796864515341914,
+      "median_truth_rank": 257.0,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.000999000999000999,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "TPMT",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.5154601049228329
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.32733483804062713,
+      "median_truth_rank": 14558.5,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "TPMT",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.4669637955224791
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.964863051302385,
+      "median_truth_rank": 288.0,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.000999000999000999,
+      "top_truth_genes": [
+        "MPG",
+        "TPMT",
+        "APEX1",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.47473769291770884
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.1409748063197706,
+      "median_truth_rank": 14736.0,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "TPMT",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.5422932044165192
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.9707497102421766,
+      "median_truth_rank": 485.5,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.000999000999000999,
+      "top_truth_genes": [
+        "MPG",
+        "TPMT",
+        "APEX1",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.45961690965656077
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.3224242054535472,
+      "median_truth_rank": 16067.5,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "TPMT",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.4900224181052889
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.8019581528701274,
+      "median_truth_rank": 1415.0,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.002997002997002997,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "NUDT15",
+        "TPMT"
+      ],
+      "null_auroc_median": 0.47985039346062347
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.18379033733910818,
+      "median_truth_rank": 12478.0,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 0.998001998001998,
+      "top_truth_genes": [
+        "TPMT",
+        "MPG",
+        "APEX1",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.5472114622094797
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.5746660159824315,
+      "median_truth_rank": 8286.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.4035964035964036,
+      "top_truth_genes": [
+        "MPG",
+        "APEX1",
+        "TPMT",
+        "NUDT15"
+      ],
+      "null_auroc_median": 0.540367839931678
+    },
+    {
+      "cohort": "Crohn",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.6511468309644362,
+      "median_truth_rank": 8252.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.04995004995004995,
+      "top_truth_genes": [
+        "TPMT",
+        "NUDT15",
+        "MPG",
+        "APEX1"
+      ],
+      "null_auroc_median": 0.4588696394802659
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.6647938018545632,
+      "median_truth_rank": 2633.0,
+      "median_non_truth_rank": 8200.5,
+      "p_empirical": 0.01098901098901099,
+      "top_truth_genes": [
+        "KYNU",
+        "IDO1",
+        "IL6",
+        "IL1B",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.44747437774524157
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.5364568081991214,
+      "median_truth_rank": 3999.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.37962037962037964,
+      "top_truth_genes": [
+        "CXCL10",
+        "IL1B",
+        "IL6",
+        "KYNU",
+        "IDO1"
+      ],
+      "null_auroc_median": 0.498389458272328
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.9185517325524646,
+      "median_truth_rank": 923.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.000999000999000999,
+      "top_truth_genes": [
+        "KYNU",
+        "IDO1",
+        "CXCL10",
+        "IL1B",
+        "IL6"
+      ],
+      "null_auroc_median": 0.49240483162518306
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.3772266959492435,
+      "median_truth_rank": 4971.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "IL1B",
+        "CXCL10",
+        "KYNU",
+        "IDO1"
+      ],
+      "null_auroc_median": 0.490367252318204
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.7826866764275255,
+      "median_truth_rank": 3426.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.004995004995004995,
+      "top_truth_genes": [
+        "KYNU",
+        "IDO1",
+        "IL1B",
+        "IL6",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.4794472913616398
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.18834797462176667,
+      "median_truth_rank": 14704.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 0.996003996003996,
+      "top_truth_genes": [
+        "CXCL10",
+        "IL6",
+        "IL1B",
+        "KYNU",
+        "IDO1"
+      ],
+      "null_auroc_median": 0.5053166178623719
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.6384516837481697,
+      "median_truth_rank": 3366.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.058941058941058944,
+      "top_truth_genes": [
+        "KYNU",
+        "IDO1",
+        "IL6",
+        "IL1B",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.5022114446071254
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.5616154221571498,
+      "median_truth_rank": 3273.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.3196803196803197,
+      "top_truth_genes": [
+        "CXCL10",
+        "IL1B",
+        "IL6",
+        "KYNU",
+        "IDO1"
+      ],
+      "null_auroc_median": 0.49557101024890193
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.5803440702781845,
+      "median_truth_rank": 3796.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.2517482517482518,
+      "top_truth_genes": [
+        "CXCL10",
+        "IL1B",
+        "IL6",
+        "KYNU",
+        "IDO1"
+      ],
+      "null_auroc_median": 0.49037335285505124
+    },
+    {
+      "cohort": "Su_COVID",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.5882381649585163,
+      "median_truth_rank": 7250.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.26173826173826176,
+      "top_truth_genes": [
+        "KYNU",
+        "IDO1",
+        "IL6",
+        "IL1B",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.5150561249389946
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.5471695235771366,
+      "median_truth_rank": 7656.0,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.5954045954045954,
+      "top_truth_genes": [
+        "TNF",
+        "IL1B",
+        "IL6",
+        "CRP"
+      ],
+      "null_auroc_median": 0.5791725126578418
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.41398767766729705,
+      "median_truth_rank": 13260.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IL1B",
+        "CRP"
+      ],
+      "null_auroc_median": 0.41398767766729705
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.398676264259135,
+      "median_truth_rank": 14779.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IL1B",
+        "CRP"
+      ],
+      "null_auroc_median": 0.398676264259135
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.5402763374611115,
+      "median_truth_rank": 8400.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.44755244755244755,
+      "top_truth_genes": [
+        "TNF",
+        "IL6",
+        "CRP",
+        "IL1B"
+      ],
+      "null_auroc_median": 0.5212095101567742
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.3989965229061185,
+      "median_truth_rank": 13147.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.5074925074925075,
+      "top_truth_genes": [
+        "CRP",
+        "IL6",
+        "TNF",
+        "IL1B"
+      ],
+      "null_auroc_median": 0.40194747758189475
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.5606127615445616,
+      "median_truth_rank": 6041.0,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.44155844155844154,
+      "top_truth_genes": [
+        "IL6",
+        "IL1B",
+        "TNF",
+        "CRP"
+      ],
+      "null_auroc_median": 0.5412485512108827
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.48476483865064357,
+      "median_truth_rank": 9838.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.6123876123876124,
+      "top_truth_genes": [
+        "TNF",
+        "IL6",
+        "IL1B",
+        "CRP"
+      ],
+      "null_auroc_median": 0.4973464283535656
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.4060955895809187,
+      "median_truth_rank": 11265.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.4195804195804196,
+      "top_truth_genes": [
+        "CRP",
+        "IL6",
+        "IL1B",
+        "TNF"
+      ],
+      "null_auroc_median": 0.38430656377722194
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 4,
+      "auroc": 0.4109070944915513,
+      "median_truth_rank": 13282.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IL1B",
+        "CRP"
+      ],
+      "null_auroc_median": 0.4109070944915513
+    },
+    {
+      "cohort": "Gao_RA",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 4,
+      "auroc": 0.5087842371744038,
+      "median_truth_rank": 8266.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.6773226773226774,
+      "top_truth_genes": [
+        "TNF",
+        "IL1B",
+        "IL6",
+        "CRP"
+      ],
+      "null_auroc_median": 0.569610504483621
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 8,
+      "auroc": 0.6798233571297821,
+      "median_truth_rank": 2125.0,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.08791208791208792,
+      "top_truth_genes": [
+        "D2HGDH",
+        "L2HGDH",
+        "IDH2",
+        "OGDH",
+        "ACO2"
+      ],
+      "null_auroc_median": 0.5410984501799987
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 8,
+      "auroc": 0.4865077185917384,
+      "median_truth_rank": 4841.0,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.5994005994005994,
+      "top_truth_genes": [
+        "IDH1",
+        "TET2",
+        "OGDH",
+        "L2HGDH",
+        "D2HGDH"
+      ],
+      "null_auroc_median": 0.49901610836536703
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 8,
+      "auroc": 0.39996339007871134,
+      "median_truth_rank": 4036.5,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IDH1",
+        "TET2",
+        "OGDH",
+        "L2HGDH",
+        "D2HGDH"
+      ],
+      "null_auroc_median": 0.5256955885044847
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 8,
+      "auroc": 0.7427390322777472,
+      "median_truth_rank": 3671.5,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.002997002997002997,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "TET2",
+        "OGDH",
+        "ACO2"
+      ],
+      "null_auroc_median": 0.4430963603636585
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 8,
+      "auroc": 0.39975364573799504,
+      "median_truth_rank": 8067.5,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.9080919080919081,
+      "top_truth_genes": [
+        "ACO2",
+        "IDH1",
+        "TET2",
+        "OGDH",
+        "L2HGDH"
+      ],
+      "null_auroc_median": 0.48970345963756173
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 8,
+      "auroc": 0.7578711330770639,
+      "median_truth_rank": 1881.5,
+      "median_non_truth_rank": 8202.0,
+      "p_empirical": 0.008991008991008992,
+      "top_truth_genes": [
+        "D2HGDH",
+        "L2HGDH",
+        "TET2",
+        "IDH1",
+        "OGDH"
+      ],
+      "null_auroc_median": 0.5310898315943621
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 8,
+      "auroc": 0.2910031118433095,
+      "median_truth_rank": 16080.5,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 0.961038961038961,
+      "top_truth_genes": [
+        "IDH1",
+        "TET2",
+        "PCMT1",
+        "OGDH",
+        "L2HGDH"
+      ],
+      "null_auroc_median": 0.4668203520654097
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 8,
+      "auroc": 0.74193437671609,
+      "median_truth_rank": 1830.5,
+      "median_non_truth_rank": 8202.0,
+      "p_empirical": 0.001998001998001998,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "ACO2",
+        "IDH2",
+        "OGDH"
+      ],
+      "null_auroc_median": 0.49239581426566603
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 8,
+      "auroc": 0.7421441210568065,
+      "median_truth_rank": 1382.0,
+      "median_non_truth_rank": 8201.0,
+      "p_empirical": 0.014985014985014986,
+      "top_truth_genes": [
+        "D2HGDH",
+        "L2HGDH",
+        "ACO2",
+        "OGDH",
+        "IDH2"
+      ],
+      "null_auroc_median": 0.5384480444200378
+    },
+    {
+      "cohort": "IDH_glioma",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 8,
+      "auroc": 0.38147156629446577,
+      "median_truth_rank": 8412.0,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.9040959040959041,
+      "top_truth_genes": [
+        "TET2",
+        "IDH1",
+        "OGDH",
+        "L2HGDH",
+        "D2HGDH"
+      ],
+      "null_auroc_median": 0.4931642412593813
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.27104942037827945,
+      "median_truth_rank": 12476.0,
+      "median_non_truth_rank": 8195.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "TERT",
+        "ATRX",
+        "IDH1",
+        "L2HGDH"
+      ],
+      "null_auroc_median": 0.49408611522705487
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.8738516517040008,
+      "median_truth_rank": 2254.0,
+      "median_non_truth_rank": 8202.5,
+      "p_empirical": 0.000999000999000999,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "ATRX",
+        "IDH2",
+        "TERT"
+      ],
+      "null_auroc_median": 0.5094221215026583
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.3673581452104942,
+      "median_truth_rank": 10859.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "TERT",
+        "ATRX",
+        "IDH1",
+        "L2HGDH"
+      ],
+      "null_auroc_median": 0.5086638194020744
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.8482524187222173,
+      "median_truth_rank": 2100.0,
+      "median_non_truth_rank": 8202.5,
+      "p_empirical": 0.001998001998001998,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "ATRX",
+        "TP53",
+        "IDH2"
+      ],
+      "null_auroc_median": 0.4991349254772074
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.6929704523664255,
+      "median_truth_rank": 2467.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.022977022977022976,
+      "top_truth_genes": [
+        "D2HGDH",
+        "L2HGDH",
+        "IDH2",
+        "IDH1",
+        "TP53"
+      ],
+      "null_auroc_median": 0.5048723088991545
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.398666434236904,
+      "median_truth_rank": 14197.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 0.8251748251748252,
+      "top_truth_genes": [
+        "TP53",
+        "ATRX",
+        "TERT",
+        "IDH1",
+        "L2HGDH"
+      ],
+      "null_auroc_median": 0.5091780702518958
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.4591824283099451,
+      "median_truth_rank": 11133.0,
+      "median_non_truth_rank": 8197.5,
+      "p_empirical": 0.6543456543456544,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "TP53",
+        "TERT",
+        "ATRX"
+      ],
+      "null_auroc_median": 0.5012071820796653
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.5534036433365294,
+      "median_truth_rank": 8965.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 0.34465534465534464,
+      "top_truth_genes": [
+        "IDH2",
+        "IDH1",
+        "ATRX",
+        "TP53",
+        "TERT"
+      ],
+      "null_auroc_median": 0.5014555913884773
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.6297219558964525,
+      "median_truth_rank": 3600.0,
+      "median_non_truth_rank": 8200.5,
+      "p_empirical": 0.12287712287712288,
+      "top_truth_genes": [
+        "IDH2",
+        "TP53",
+        "ATRX",
+        "TERT",
+        "IDH1"
+      ],
+      "null_auroc_median": 0.5071363200557831
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.5113570992765623,
+      "median_truth_rank": 10704.0,
+      "median_non_truth_rank": 8197.5,
+      "p_empirical": 0.4435564435564436,
+      "top_truth_genes": [
+        "L2HGDH",
+        "D2HGDH",
+        "TP53",
+        "TERT",
+        "ATRX"
+      ],
+      "null_auroc_median": 0.4933278131264708
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.32879804758999387,
+      "median_truth_rank": 9026.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IFNG",
+        "LPO",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.4798810250152531
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.7058397977861064,
+      "median_truth_rank": 5730.0,
+      "median_non_truth_rank": 8202.5,
+      "p_empirical": 0.03796203796203796,
+      "top_truth_genes": [
+        "TNF",
+        "IL6",
+        "IFNG",
+        "LPO",
+        "GLO1"
+      ],
+      "null_auroc_median": 0.5110149917196897
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.7713326941514861,
+      "median_truth_rank": 3641.0,
+      "median_non_truth_rank": 8202.5,
+      "p_empirical": 0.003996003996003996,
+      "top_truth_genes": [
+        "TNF",
+        "GLO1",
+        "LPO",
+        "CXCL10",
+        "GAL"
+      ],
+      "null_auroc_median": 0.5004401638629827
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.2272727272727273,
+      "median_truth_rank": 14975.0,
+      "median_non_truth_rank": 8195.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IFNG",
+        "LPO",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.48650091519219035
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.3633574479212063,
+      "median_truth_rank": 10747.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 0.9460539460539461,
+      "top_truth_genes": [
+        "TNF",
+        "GLO1",
+        "LPO",
+        "CXCL10",
+        "GAL"
+      ],
+      "null_auroc_median": 0.5260895145123332
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.3938987187309335,
+      "median_truth_rank": 7270.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IFNG",
+        "LPO",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.47595659374182864
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.36665649786455157,
+      "median_truth_rank": 8272.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IFNG",
+        "LPO",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.4878017955199163
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.3964961213283361,
+      "median_truth_rank": 11399.0,
+      "median_non_truth_rank": 8197.5,
+      "p_empirical": 0.8651348651348651,
+      "top_truth_genes": [
+        "IL6",
+        "IFNG",
+        "TNF",
+        "GLO1",
+        "LPO"
+      ],
+      "null_auroc_median": 0.510038786716639
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.3071995118974985,
+      "median_truth_rank": 8608.0,
+      "median_non_truth_rank": 8197.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF",
+        "IFNG",
+        "LPO",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.47837749498823323
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.8008803277259652,
+      "median_truth_rank": 3941.0,
+      "median_non_truth_rank": 8202.5,
+      "p_empirical": 0.003996003996003996,
+      "top_truth_genes": [
+        "TNF",
+        "IL6",
+        "IFNG",
+        "GLO1",
+        "LPO"
+      ],
+      "null_auroc_median": 0.5206397629216422
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.35361761835041483,
+      "median_truth_rank": 15144.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.35361761835041483
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.5979868228404099,
+      "median_truth_rank": 4733.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.44155844155844154,
+      "top_truth_genes": [
+        "ERBB2",
+        "TP53",
+        "ESR1",
+        "BRCA1",
+        "BRCA2"
+      ],
+      "null_auroc_median": 0.5859382625671059
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.3399524158125915,
+      "median_truth_rank": 10557.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.3399524158125915
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.6128965348950708,
+      "median_truth_rank": 5970.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.2897102897102897,
+      "top_truth_genes": [
+        "TP53",
+        "ERBB2",
+        "ESR1",
+        "BRCA1",
+        "BRCA2"
+      ],
+      "null_auroc_median": 0.5733223523670083
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.3387018057589068,
+      "median_truth_rank": 11503.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.3387018057589068
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.7521961932650073,
+      "median_truth_rank": 3560.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.003996003996003996,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA2",
+        "BRCA1",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.5925359931673988
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.3716752074182528,
+      "median_truth_rank": 15363.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.3716752074182528
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.8067593948267447,
+      "median_truth_rank": 2698.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.006993006993006993,
+      "top_truth_genes": [
+        "TP53",
+        "ESR1",
+        "BRCA1",
+        "BRCA2",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.6920204978038067
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 5,
+      "auroc": 0.3931490971205466,
+      "median_truth_rank": 11104.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "BRCA1",
+        "BRCA2",
+        "ESR1",
+        "ERBB2"
+      ],
+      "null_auroc_median": 0.3931490971205466
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 5,
+      "auroc": 0.8594192288921425,
+      "median_truth_rank": 2395.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.001998001998001998,
+      "top_truth_genes": [
+        "TP53",
+        "ESR1",
+        "BRCA1",
+        "ERBB2",
+        "BRCA2"
+      ],
+      "null_auroc_median": 0.7043710346510492
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 10,
+      "auroc": 0.4033990358210777,
+      "median_truth_rank": 11836.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.5954045954045954,
+      "top_truth_genes": [
+        "DUSP6",
+        "KRAS",
+        "EGFR",
+        "DUSP4",
+        "SPRY2"
+      ],
+      "null_auroc_median": 0.4242822312864343
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 10,
+      "auroc": 0.5905565387197168,
+      "median_truth_rank": 4674.5,
+      "median_non_truth_rank": 8202.0,
+      "p_empirical": 0.05194805194805195,
+      "top_truth_genes": [
+        "TP53",
+        "KEAP1",
+        "STK11",
+        "EREG",
+        "HBEGF"
+      ],
+      "null_auroc_median": 0.4780466223225728
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 10,
+      "auroc": 0.46596082260328314,
+      "median_truth_rank": 12590.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.42957042957042957,
+      "top_truth_genes": [
+        "DUSP6",
+        "TP53",
+        "KEAP1",
+        "KRAS",
+        "EGFR"
+      ],
+      "null_auroc_median": 0.46420333190944046
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 10,
+      "auroc": 0.25789650332580705,
+      "median_truth_rank": 13025.5,
+      "median_non_truth_rank": 8195.0,
+      "p_empirical": 0.987012987012987,
+      "top_truth_genes": [
+        "DUSP4",
+        "SPRY2",
+        "KEAP1",
+        "STK11",
+        "KRAS"
+      ],
+      "null_auroc_median": 0.41034661622017454
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 10,
+      "auroc": 0.42106547873314215,
+      "median_truth_rank": 12951.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "KEAP1",
+        "KRAS",
+        "EGFR",
+        "HBEGF"
+      ],
+      "null_auroc_median": 0.46692500152559957
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 10,
+      "auroc": 0.7585219991456642,
+      "median_truth_rank": 3328.0,
+      "median_non_truth_rank": 8203.0,
+      "p_empirical": 0.011988011988011988,
+      "top_truth_genes": [
+        "DUSP6",
+        "TP53",
+        "EGFR",
+        "KRAS",
+        "HBEGF"
+      ],
+      "null_auroc_median": 0.6120690181241228
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 10,
+      "auroc": 0.41066088972966375,
+      "median_truth_rank": 12802.0,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "TP53",
+        "KEAP1",
+        "KRAS",
+        "EGFR",
+        "HBEGF"
+      ],
+      "null_auroc_median": 0.4561756270214195
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 10,
+      "auroc": 0.5772197473607128,
+      "median_truth_rank": 6655.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.6223776223776224,
+      "top_truth_genes": [
+        "HBEGF",
+        "EREG",
+        "EGFR",
+        "KRAS",
+        "SPRY2"
+      ],
+      "null_auroc_median": 0.604720205040581
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 10,
+      "auroc": 0.6964087386342834,
+      "median_truth_rank": 3314.0,
+      "median_non_truth_rank": 8202.0,
+      "p_empirical": 0.12287712287712288,
+      "top_truth_genes": [
+        "TP53",
+        "HBEGF",
+        "EREG",
+        "STK11",
+        "EGFR"
+      ],
+      "null_auroc_median": 0.6091978397510223
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 10,
+      "auroc": 0.4607798864953927,
+      "median_truth_rank": 14653.5,
+      "median_non_truth_rank": 8197.0,
+      "p_empirical": 0.5114885114885115,
+      "top_truth_genes": [
+        "DUSP6",
+        "TP53",
+        "KEAP1",
+        "KRAS",
+        "EGFR"
+      ],
+      "null_auroc_median": 0.46160676145725277
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.6799965135535606,
+      "median_truth_rank": 2280.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.05094905094905095,
+      "top_truth_genes": [
+        "CXCL13",
+        "PADI4",
+        "CXCR5",
+        "CXCL11",
+        "PADI2"
+      ],
+      "null_auroc_median": 0.5371720561317876
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.28519131874836573,
+      "median_truth_rank": 14397.0,
+      "median_non_truth_rank": 8196.5,
+      "p_empirical": 0.8811188811188811,
+      "top_truth_genes": [
+        "PADI2",
+        "CXCL9",
+        "CXCL10",
+        "PADI4",
+        "CXCL13"
+      ],
+      "null_auroc_median": 0.4050902118016212
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.4078706528370958,
+      "median_truth_rank": 6967.0,
+      "median_non_truth_rank": 8200.5,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "PADI2",
+        "PADI4",
+        "CXCL10",
+        "CXCL13",
+        "CXCR5"
+      ],
+      "null_auroc_median": 0.5331909701037217
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.6475376972021267,
+      "median_truth_rank": 1898.0,
+      "median_non_truth_rank": 8199.5,
+      "p_empirical": 0.02197802197802198,
+      "top_truth_genes": [
+        "PADI4",
+        "CXCL13",
+        "CXCR5",
+        "PADI2",
+        "CXCL9"
+      ],
+      "null_auroc_median": 0.4148195763967576
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.5785670705133792,
+      "median_truth_rank": 4060.0,
+      "median_non_truth_rank": 8200.5,
+      "p_empirical": 0.2887112887112887,
+      "top_truth_genes": [
+        "CXCL13",
+        "CXCL11",
+        "CXCR5",
+        "PADI2",
+        "PADI4"
+      ],
+      "null_auroc_median": 0.5228536564107034
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.43550074086986834,
+      "median_truth_rank": 11340.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 0.5504495504495505,
+      "top_truth_genes": [
+        "PADI4",
+        "PADI2",
+        "CXCL9",
+        "CXCL10",
+        "CXCL13"
+      ],
+      "null_auroc_median": 0.44748104244748543
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.47466225050117666,
+      "median_truth_rank": 6726.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.7622377622377622,
+      "top_truth_genes": [
+        "PADI2",
+        "PADI4",
+        "CXCL10",
+        "CXCL13",
+        "CXCR5"
+      ],
+      "null_auroc_median": 0.4912926000174322
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.5065196548418025,
+      "median_truth_rank": 9645.0,
+      "median_non_truth_rank": 8198.5,
+      "p_empirical": 0.2817182817182817,
+      "top_truth_genes": [
+        "PADI4",
+        "CXCR5",
+        "CXCL13",
+        "CXCL9",
+        "CXCL10"
+      ],
+      "null_auroc_median": 0.43779743746186695
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 7,
+      "auroc": 0.6786280833260698,
+      "median_truth_rank": 2228.0,
+      "median_non_truth_rank": 8201.5,
+      "p_empirical": 0.060939060939060936,
+      "top_truth_genes": [
+        "PADI4",
+        "CXCL13",
+        "CXCR5",
+        "CXCL11",
+        "PADI2"
+      ],
+      "null_auroc_median": 0.5298287283186611
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 7,
+      "auroc": 0.2901943693890003,
+      "median_truth_rank": 13732.0,
+      "median_non_truth_rank": 8197.5,
+      "p_empirical": 0.9250749250749251,
+      "top_truth_genes": [
+        "PADI2",
+        "CXCL9",
+        "CXCL10",
+        "PADI4",
+        "CXCL13"
+      ],
+      "null_auroc_median": 0.45400505534733726
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 6,
+      "auroc": 0.4384113232871698,
+      "median_truth_rank": 14630.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "ATG16L1",
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9"
+      ],
+      "null_auroc_median": 0.4384113232871698
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 6,
+      "auroc": 0.49795619547312553,
+      "median_truth_rank": 8545.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.4225774225774226,
+      "top_truth_genes": [
+        "ATG16L1",
+        "NLRP3",
+        "IL23R",
+        "CARD9",
+        "NOD2"
+      ],
+      "null_auroc_median": 0.47621408089805384
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 6,
+      "auroc": 0.513452504423159,
+      "median_truth_rank": 10306.5,
+      "median_non_truth_rank": 8199.0,
+      "p_empirical": 0.18681318681318682,
+      "top_truth_genes": [
+        "ATG16L1",
+        "IL23R",
+        "XBP1",
+        "NLRP3",
+        "NOD2"
+      ],
+      "null_auroc_median": 0.4277118540662559
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 6,
+      "auroc": 0.5626359994305817,
+      "median_truth_rank": 5480.5,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.42957042957042957,
+      "top_truth_genes": [
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9",
+        "ATG16L1"
+      ],
+      "null_auroc_median": 0.5487920200109817
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 6,
+      "auroc": 0.4163565371240315,
+      "median_truth_rank": 14652.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "ATG16L1",
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9"
+      ],
+      "null_auroc_median": 0.4163565371240315
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 6,
+      "auroc": 0.6259634352185142,
+      "median_truth_rank": 4427.5,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.22377622377622378,
+      "top_truth_genes": [
+        "XBP1",
+        "NOD2",
+        "NLRP3",
+        "CARD9",
+        "IL23R"
+      ],
+      "null_auroc_median": 0.5632384641978322
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 6,
+      "auroc": 0.4144347507778659,
+      "median_truth_rank": 14556.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "ATG16L1",
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9"
+      ],
+      "null_auroc_median": 0.4927119557480732
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 6,
+      "auroc": 0.8070994244809144,
+      "median_truth_rank": 2466.0,
+      "median_non_truth_rank": 8202.0,
+      "p_empirical": 0.002997002997002997,
+      "top_truth_genes": [
+        "ATG16L1",
+        "NLRP3",
+        "XBP1",
+        "IL23R",
+        "NOD2"
+      ],
+      "null_auroc_median": 0.5250874463628414
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 6,
+      "auroc": 0.37429076932462935,
+      "median_truth_rank": 14705.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "ATG16L1",
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9"
+      ],
+      "null_auroc_median": 0.45835112765135344
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 6,
+      "auroc": 0.6084741626502349,
+      "median_truth_rank": 7678.0,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.25074925074925075,
+      "top_truth_genes": [
+        "XBP1",
+        "NLRP3",
+        "NOD2",
+        "CARD9",
+        "ATG16L1"
+      ],
+      "null_auroc_median": 0.534071034917536
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 1,
+      "sign": "+",
+      "truth_resolvable": 2,
+      "auroc": 0.7143031412015859,
+      "median_truth_rank": 4685.5,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.14285714285714285,
+      "top_truth_genes": [
+        "TNF",
+        "IL6"
+      ],
+      "null_auroc_median": 0.5589585239402257
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 1,
+      "sign": "-",
+      "truth_resolvable": 2,
+      "auroc": 0.3673376029277219,
+      "median_truth_rank": 15369.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.3673376029277219
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 2,
+      "sign": "+",
+      "truth_resolvable": 2,
+      "auroc": 0.33159499847514484,
+      "median_truth_rank": 15756.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.5063815187557181
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 2,
+      "sign": "-",
+      "truth_resolvable": 2,
+      "auroc": 0.5732845379688929,
+      "median_truth_rank": 6997.5,
+      "median_non_truth_rank": 8200.0,
+      "p_empirical": 0.1928071928071928,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.43138914303141196
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 3,
+      "sign": "+",
+      "truth_resolvable": 2,
+      "auroc": 0.37310155535224154,
+      "median_truth_rank": 15245.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.37310155535224154
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 3,
+      "sign": "-",
+      "truth_resolvable": 2,
+      "auroc": 0.466575175358341,
+      "median_truth_rank": 8747.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.3086913086913087,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.4222933821286978
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 4,
+      "sign": "+",
+      "truth_resolvable": 2,
+      "auroc": 0.39887160719731624,
+      "median_truth_rank": 9857.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.5204795204795205,
+      "top_truth_genes": [
+        "TNF",
+        "IL6"
+      ],
+      "null_auroc_median": 0.4054056114669106
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 4,
+      "sign": "-",
+      "truth_resolvable": 2,
+      "auroc": 0.3921927416895395,
+      "median_truth_rank": 15300.5,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.3921927416895395
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 5,
+      "sign": "+",
+      "truth_resolvable": 2,
+      "auroc": 0.3248246416590424,
+      "median_truth_rank": 12647.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 1.0,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.3248246416590424
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "pc": 5,
+      "sign": "-",
+      "truth_resolvable": 2,
+      "auroc": 0.3937480939310765,
+      "median_truth_rank": 9941.0,
+      "median_non_truth_rank": 8198.0,
+      "p_empirical": 0.7122877122877123,
+      "top_truth_genes": [
+        "IL6",
+        "TNF"
+      ],
+      "null_auroc_median": 0.48462946020128084
+    }
+  ],
+  "aggregate": {
+    "n_cells": 110,
+    "n_auroc_60": 34,
+    "n_auroc_70": 21,
+    "n_auroc_80": 11,
+    "n_p_05": 24,
+    "n_p_01": 17,
+    "median_auroc": 0.48563627862119096,
+    "median_p": 0.5094905094905096
+  },
+  "config": {
+    "metric": "AUROC of truth-vs-non-truth gene membership using |loading| as score",
+    "null": "degree-matched random gene subsets",
+    "n_null": 1000
+  },
+  "compute_seconds": 964.3388774394989
+}

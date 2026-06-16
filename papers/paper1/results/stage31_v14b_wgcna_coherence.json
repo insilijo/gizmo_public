@@ -1,0 +1,146 @@
+{
+  "results": [
+    {
+      "cohort": "Crohn",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 4,
+          "wgcna_mean_top_pathway_frac": 0.08851805085232164,
+          "wgcna_median_top_pathway_frac": 0.07518796992481203,
+          "gizmo_n_modules": 159,
+          "gizmo_median_top_pathway_frac": 0.03731859018659295,
+          "ratio_gizmo_over_wgcna": 0.4963372494816862
+        }
+      }
+    },
+    {
+      "cohort": "Su_COVID",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 4,
+          "wgcna_mean_top_pathway_frac": 0.043450032857147484,
+          "wgcna_median_top_pathway_frac": 0.04702702702702703,
+          "gizmo_n_modules": 144,
+          "gizmo_median_top_pathway_frac": 0.026670484741295585,
+          "ratio_gizmo_over_wgcna": 0.5671309973723774
+        }
+      }
+    },
+    {
+      "cohort": "Erawijantari",
+      "designs": {}
+    },
+    {
+      "cohort": "Gao_RA",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 4,
+          "wgcna_mean_top_pathway_frac": 0.02627436232123065,
+          "wgcna_median_top_pathway_frac": 0.02491056116273492,
+          "gizmo_n_modules": 176,
+          "gizmo_median_top_pathway_frac": 0.03689158236304638,
+          "ratio_gizmo_over_wgcna": 1.4809615135541196
+        }
+      }
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 6,
+          "wgcna_mean_top_pathway_frac": 0.04467077994684538,
+          "wgcna_median_top_pathway_frac": 0.038109245694687266,
+          "gizmo_n_modules": 162,
+          "gizmo_median_top_pathway_frac": 0.033470820062699705,
+          "ratio_gizmo_over_wgcna": 0.8782860813056136
+        }
+      }
+    },
+    {
+      "cohort": "IDH_glioma",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 5,
+          "wgcna_mean_top_pathway_frac": 0.02149930400093953,
+          "wgcna_median_top_pathway_frac": 0.021119324181626188,
+          "gizmo_n_modules": 170,
+          "gizmo_median_top_pathway_frac": 0.03361195836036814,
+          "ratio_gizmo_over_wgcna": 1.5915262283634315
+        }
+      }
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 3,
+          "wgcna_mean_top_pathway_frac": 0.0711501085365238,
+          "wgcna_median_top_pathway_frac": 0.08333333333333333,
+          "gizmo_n_modules": 164,
+          "gizmo_median_top_pathway_frac": 0.03348986297837863,
+          "ratio_gizmo_over_wgcna": 0.4018783557405436
+        }
+      }
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 6,
+          "wgcna_mean_top_pathway_frac": 0.0865841725338989,
+          "wgcna_median_top_pathway_frac": 0.08340808004216639,
+          "gizmo_n_modules": 178,
+          "gizmo_median_top_pathway_frac": 0.0415469047879579,
+          "ratio_gizmo_over_wgcna": 0.4981160670159791
+        }
+      }
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 6,
+          "wgcna_mean_top_pathway_frac": 0.033094158921328054,
+          "wgcna_median_top_pathway_frac": 0.031279274004683846,
+          "gizmo_n_modules": 169,
+          "gizmo_median_top_pathway_frac": 0.03231017770597738,
+          "ratio_gizmo_over_wgcna": 1.0329580443951214
+        }
+      }
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 9,
+          "wgcna_mean_top_pathway_frac": 0.030205103030653727,
+          "wgcna_median_top_pathway_frac": 0.029411764705882353,
+          "gizmo_n_modules": 165,
+          "gizmo_median_top_pathway_frac": 0.03156524568825252,
+          "ratio_gizmo_over_wgcna": 1.073218353400586
+        }
+      }
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "designs": {
+        "prot": {
+          "wgcna_n_modules": 9,
+          "wgcna_mean_top_pathway_frac": 0.049015402446524164,
+          "wgcna_median_top_pathway_frac": 0.04,
+          "gizmo_n_modules": 151,
+          "gizmo_median_top_pathway_frac": 0.0385777045579352,
+          "ratio_gizmo_over_wgcna": 0.96444261394838
+        }
+      }
+    },
+    {
+      "cohort": "HMP2_IBD_CD",
+      "designs": {}
+    }
+  ],
+  "config": {
+    "corr_thresh": 0.5,
+    "min_module_size": 5
+  }
+}

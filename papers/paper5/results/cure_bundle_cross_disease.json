@@ -1,0 +1,81 @@
+{
+  "Wang_RA": {
+    "\u0394Filbin-PC3__\u0394Filbin-PC5": {
+      "obs_rho": 0.5281759492285808,
+      "CI95": [
+        0.24527937929360963,
+        0.7542196651464863
+      ],
+      "gse89403_rho": 0.639,
+      "verdict": "\u2713 strong"
+    },
+    "\u0394Filbin-PC3__\u0394Wang-PC5": {
+      "obs_rho": 0.20450815187657292,
+      "CI95": [
+        -0.10827699671860638,
+        0.4743662320149483
+      ],
+      "gse89403_rho": 0.749,
+      "verdict": "? underpowered"
+    },
+    "\u0394Filbin-PC5__\u0394Wang-PC5": {
+      "obs_rho": 0.18875150454097822,
+      "CI95": [
+        -0.1347730760798071,
+        0.4923240604014481
+      ],
+      "gse89403_rho": 0.537,
+      "verdict": "? underpowered"
+    }
+  },
+  "Filbin": {
+    "\u0394Filbin-PC3__\u0394Filbin-PC5": {
+      "obs_rho": -0.12495309568480302,
+      "CI95": [
+        -0.4252491520077451,
+        0.1821284196671994
+      ],
+      "gse89403_rho": 0.639,
+      "verdict": "\u2717 different"
+    },
+    "\u0394Filbin-PC3__\u0394Wang-PC5": {
+      "obs_rho": 0.30731707317073176,
+      "CI95": [
+        -0.011634742112127082,
+        0.5486159818006817
+      ],
+      "gse89403_rho": 0.749,
+      "verdict": "? underpowered"
+    },
+    "\u0394Filbin-PC5__\u0394Wang-PC5": {
+      "obs_rho": 0.09362101313320827,
+      "CI95": [
+        -0.27123347089375804,
+        0.4145566547030597
+      ],
+      "gse89403_rho": 0.537,
+      "verdict": "? underpowered"
+    }
+  },
+  "GSE94438_progressor_test": {
+    "n_progressor": 21,
+    "n_non_progressor": 48,
+    "per_axis": {
+      "Filbin-PC3": {
+        "progressor_mean": -1.7973650693893433,
+        "non_progressor_mean": -1.8690773248672485,
+        "p_grp": 0.5794125099278237
+      },
+      "Filbin-PC5": {
+        "progressor_mean": -0.07300025224685669,
+        "non_progressor_mean": -0.8783044815063477,
+        "p_grp": 0.22271716778656592
+      },
+      "Wang-PC5": {
+        "progressor_mean": -1.525432825088501,
+        "non_progressor_mean": -2.9678900241851807,
+        "p_grp": 0.3716915005116004
+      }
+    }
+  }
+}

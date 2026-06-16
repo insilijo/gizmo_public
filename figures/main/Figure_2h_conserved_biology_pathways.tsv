@@ -1,5 +1,0 @@
-pathway_id	pathway_name	n_members	n_pairs	n_diseases	diseases	members
-R-HSA-6798695	Neutrophil degranulation	5	3	3	Glioma|LungAdeno|RA	Exocytosis of tertiary granule membrane proteins | Exocytosis of specific granule membrane proteins | Exocytosis of specific granule lumen proteins | Exocytosis of secretory granule membrane proteins | Exocytosis of ficolin-rich granule membrane proteins
-R-HSA-198933	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	4	3	3	Glioma|LungAdeno|RA	TREM,CD300 binds lipids | Sialic acid binds SIGLEC | LILRs interact with MHC Class I | ICAM1-5 bind Integrin alphaLbeta2 (LFA-1)
-R-HSA-975957	Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)	3	2	1	Glioma	SMG1 phosphorylates UPF1 (enhanced by Exon Junction Complex) | UPF1 binds an mRNP with a termination codon preceding an Exon Junction Complex | SMG6 hydrolyzes mRNA with premature termination codon
-R-HSA-380108	Chemokine receptors bind chemokines	3	3	3	Glioma|LungAdeno|RA	Receptor ACKR2 binds most inflammatory CC chemokines | CXCR5 binds CXCL13 | Receptor CXCR3 binds ligands CXCL9 to 11

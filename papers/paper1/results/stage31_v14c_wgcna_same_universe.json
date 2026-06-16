@@ -1,0 +1,118 @@
+{
+  "results": [
+    {
+      "cohort": "Crohn",
+      "gene_universe_size": 112,
+      "wgcna_n": 4,
+      "wgcna_median_tpf": 0.07518796992481203,
+      "gizmo_full_n": 159,
+      "gizmo_full_median_tpf": 0.03731859018659295,
+      "gizmo_restricted_n": 23,
+      "gizmo_restricted_median_tpf": 0.04,
+      "ratio_restricted": 0.532
+    },
+    {
+      "cohort": "Su_COVID",
+      "gene_universe_size": 268,
+      "wgcna_n": 4,
+      "wgcna_median_tpf": 0.04702702702702703,
+      "gizmo_full_n": 144,
+      "gizmo_full_median_tpf": 0.026670484741295585,
+      "gizmo_restricted_n": 64,
+      "gizmo_restricted_median_tpf": 0.028383401989349945,
+      "ratio_restricted": 0.6035550997735333
+    },
+    {
+      "cohort": "Gao_RA",
+      "gene_universe_size": 10113,
+      "wgcna_n": 4,
+      "wgcna_median_tpf": 0.02491056116273492,
+      "gizmo_full_n": 176,
+      "gizmo_full_median_tpf": 0.03689158236304638,
+      "gizmo_restricted_n": 172,
+      "gizmo_restricted_median_tpf": 0.035919540229885055,
+      "ratio_restricted": 1.4419402274894983
+    },
+    {
+      "cohort": "Filbin_COVID",
+      "gene_universe_size": 1105,
+      "wgcna_n": 6,
+      "wgcna_median_tpf": 0.038109245694687266,
+      "gizmo_full_n": 162,
+      "gizmo_full_median_tpf": 0.033470820062699705,
+      "gizmo_restricted_n": 120,
+      "gizmo_restricted_median_tpf": 0.033680855661192735,
+      "ratio_restricted": 0.8837974892241993
+    },
+    {
+      "cohort": "IDH_glioma",
+      "gene_universe_size": 8410,
+      "wgcna_n": 5,
+      "wgcna_median_tpf": 0.021119324181626188,
+      "gizmo_full_n": 170,
+      "gizmo_full_median_tpf": 0.03361195836036814,
+      "gizmo_restricted_n": 164,
+      "gizmo_restricted_median_tpf": 0.032010009676467305,
+      "ratio_restricted": 1.5156739581807268
+    },
+    {
+      "cohort": "TCGA_IDH_glioma",
+      "gene_universe_size": 10358,
+      "wgcna_n": 3,
+      "wgcna_median_tpf": 0.08333333333333333,
+      "gizmo_full_n": 164,
+      "gizmo_full_median_tpf": 0.03348986297837863,
+      "gizmo_restricted_n": 158,
+      "gizmo_restricted_median_tpf": 0.03310135430135514,
+      "ratio_restricted": 0.39721625161626173
+    },
+    {
+      "cohort": "CorEvitas_RA",
+      "gene_universe_size": 1118,
+      "wgcna_n": 6,
+      "wgcna_median_tpf": 0.08340808004216639,
+      "gizmo_full_n": 178,
+      "gizmo_full_median_tpf": 0.0415469047879579,
+      "gizmo_restricted_n": 109,
+      "gizmo_restricted_median_tpf": 0.0759493670886076,
+      "ratio_restricted": 0.9105756546633361
+    },
+    {
+      "cohort": "KMPLOT_BRCA",
+      "gene_universe_size": 8006,
+      "wgcna_n": 6,
+      "wgcna_median_tpf": 0.031279274004683846,
+      "gizmo_full_n": 169,
+      "gizmo_full_median_tpf": 0.03231017770597738,
+      "gizmo_restricted_n": 157,
+      "gizmo_restricted_median_tpf": 0.029728020240354206,
+      "ratio_restricted": 0.9504063373051002
+    },
+    {
+      "cohort": "TCGA_LUAD",
+      "gene_universe_size": 10296,
+      "wgcna_n": 9,
+      "wgcna_median_tpf": 0.029411764705882353,
+      "gizmo_full_n": 165,
+      "gizmo_full_median_tpf": 0.03156524568825252,
+      "gizmo_restricted_n": 160,
+      "gizmo_restricted_median_tpf": 0.032540561248707314,
+      "ratio_restricted": 1.1063790824560487
+    },
+    {
+      "cohort": "GSE89408_RA",
+      "gene_universe_size": 9888,
+      "wgcna_n": 9,
+      "wgcna_median_tpf": 0.04,
+      "gizmo_full_n": 151,
+      "gizmo_full_median_tpf": 0.0385777045579352,
+      "gizmo_restricted_n": 145,
+      "gizmo_restricted_median_tpf": 0.040798980025499365,
+      "ratio_restricted": 1.019974500637484
+    }
+  ],
+  "config": {
+    "corr_thresh": 0.5,
+    "min_module_size": 5
+  }
+}
