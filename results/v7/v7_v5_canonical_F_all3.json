@@ -1,0 +1,24 @@
+{
+  "KMPLOT_BRCA": {
+    "F_v5_canonical_mean": 0.4957646329834794,
+    "F_v5_canonical_std": 0.016755626375471903,
+    "F_zscored_prior": 0.451,
+    "PCA_substrate_matched_prior": 0.589,
+    "PCA_all_genes_prior": 0.596
+  },
+  "TCGA_LUAD": {
+    "F_v5_canonical_mean": 0.5552506173745098,
+    "F_v5_canonical_std": 0.06351247827092264,
+    "F_zscored_prior": 0.58,
+    "PCA_substrate_matched_prior": 0.616,
+    "PCA_all_genes_prior": 0.6
+  },
+  "TCGA_IDH_glioma": {
+    "F_v5_canonical_mean": 0.8235073007665374,
+    "F_v5_canonical_std": 0.07225197781199305,
+    "F_zscored_prior": 0.79,
+    "PCA_substrate_matched_prior": 0.819,
+    "PCA_all_genes_prior": 0.821
+  },
+  "compute_seconds": 79.05626606941223
+}

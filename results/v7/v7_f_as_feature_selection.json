@@ -1,0 +1,61 @@
+{
+  "TCGA_IDH_glioma": {
+    "cohort": "TCGA_IDH_glioma",
+    "F_alpha_pc_used_for_selection": 4,
+    "n_selected_in_expr": 50,
+    "top_selected_symbols": [
+      "SLC4A4",
+      "WDR4",
+      "MCM7",
+      "MCM4",
+      "PTDSS1",
+      "SLC29A3",
+      "MCM2",
+      "MASTL",
+      "MINK1",
+      "TNIK",
+      "GLUD1",
+      "FOXO1",
+      "AMOTL1",
+      "NPHP3",
+      "SLC1A4",
+      "AK1",
+      "ARL3",
+      "CDC6",
+      "KCNN3",
+      "SLC25A26"
+    ],
+    "pca_on_F_selected_best_PC": 0.7536723336953648,
+    "pca_on_F_selected_all_7": 0.814416896887552
+  },
+  "KMPLOT_BRCA": {
+    "cohort": "KMPLOT_BRCA",
+    "F_alpha_pc_used_for_selection": 3,
+    "n_selected_in_expr": 50,
+    "top_selected_symbols": [
+      "PTDSS1",
+      "MCM4",
+      "MCM7",
+      "B2M",
+      "MCM2",
+      "GATA3",
+      "ESR1",
+      "GINS1",
+      "HLA-C",
+      "IGF2",
+      "IGF1",
+      "HLA-B",
+      "HLA-A",
+      "ISG15",
+      "STAT4",
+      "LCK",
+      "OAS1",
+      "NBEA",
+      "GAMT",
+      "CORO1A"
+    ],
+    "pca_on_F_selected_best_PC": 0.5919500559566471,
+    "pca_on_F_selected_all_7": 0.6198450143805825
+  },
+  "compute_seconds": 52.422075271606445
+}
